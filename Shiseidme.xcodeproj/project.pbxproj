@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDBB20E541DB00B36511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDBA20E541DB00B36511 /* ViewController.swift */; };
 		A647DDBE20E541DB00B36511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBC20E541DB00B36511 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2117F26F5914DB4F9740CE7C /* Pods-Shiseidme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.release.xcconfig"; sourceTree = "<group>"; };
+		4702D4A04DABC84BA31967D6 /* Pods-Shiseidme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.debug.xcconfig"; sourceTree = "<group>"; };
+		A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiseidme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBA20E541DB00B36511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		801DB5D70DF575083AA0F7D9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4702D4A04DABC84BA31967D6 /* Pods-Shiseidme.debug.xcconfig */,
+				2117F26F5914DB4F9740CE7C /* Pods-Shiseidme.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		95ED39666A8682BC45385E4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A647DDAC20E541DB00B36511 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +103,8 @@
 				A647DDCC20E541DD00B36511 /* ShiseidmeTests */,
 				A647DDD720E541DD00B36511 /* ShiseidmeUITests */,
 				A647DDB620E541DB00B36511 /* Products */,
+				801DB5D70DF575083AA0F7D9 /* Pods */,
+				95ED39666A8682BC45385E4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A647DDDD20E541DD00B36511 /* Build configuration list for PBXNativeTarget "Shiseidme" */;
 			buildPhases = (
+				9C2DDAB8EB57E7465ADD1182 /* [CP] Check Pods Manifest.lock */,
 				A647DDB120E541DB00B36511 /* Sources */,
 				A647DDB220E541DB00B36511 /* Frameworks */,
 				A647DDB320E541DB00B36511 /* Resources */,
+				52BE782A906B7EDF700826C7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -250,6 +276,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		52BE782A906B7EDF700826C7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/Cordova/Cordova.framework",
+				"${BUILT_PRODUCTS_DIR}/DTPickerPresenter/DTPickerPresenter.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Liferay-iOS-SDK/LRMobileSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/LiferayScreens/LiferayScreens.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MDRadialProgress/MDRadialProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SMXMLDocument/SMXMLDocument.framework",
+				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/TNRadioButtonGroup/TNRadioButtonGroup.framework",
+				"${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cordova.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DTPickerPresenter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LRMobileSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiferayScreens.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDRadialProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMXMLDocument.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TNRadioButtonGroup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapDatabase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C2DDAB8EB57E7465ADD1182 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Shiseidme-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A647DDB120E541DB00B36511 /* Sources */ = {
@@ -428,6 +523,7 @@
 		};
 		A647DDDE20E541DD00B36511 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4702D4A04DABC84BA31967D6 /* Pods-Shiseidme.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +541,7 @@
 		};
 		A647DDDF20E541DD00B36511 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2117F26F5914DB4F9740CE7C /* Pods-Shiseidme.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
