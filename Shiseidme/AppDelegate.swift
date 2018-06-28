@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let rootViewController = storyBoard.instantiateViewController(withIdentifier: "ImageGalleryViewController") as! ImageGalleryViewController
+//        
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        window?.rootViewController = UINavigationController(rootViewController: rootViewController)
+//        window?.makeKeyAndVisible()
         return true
     }
 

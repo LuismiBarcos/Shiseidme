@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
-		A647DDBB20E541DB00B36511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDBA20E541DB00B36511 /* ViewController.swift */; };
 		A647DDBE20E541DB00B36511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBC20E541DB00B36511 /* Main.storyboard */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
 		A647DDCE20E541DD00B36511 /* ShiseidmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDCD20E541DD00B36511 /* ShiseidmeTests.swift */; };
 		A647DDD920E541DD00B36511 /* ShiseidmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDD820E541DD00B36511 /* ShiseidmeUITests.swift */; };
+		A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */; };
+		A68D6F7D20E54713005D2C79 /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F7C20E54713005D2C79 /* ImageGalleryViewController.swift */; };
+		A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */; };
+		A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8320E54829005D2C79 /* LoginViewController.swift */; };
+		A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */; };
+		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */; };
+		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +46,6 @@
 		A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiseidme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A647DDBA20E541DB00B36511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A647DDBD20E541DB00B36511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A647DDC220E541DD00B36511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		A647DDD420E541DD00B36511 /* ShiseidmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiseidmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDD820E541DD00B36511 /* ShiseidmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiseidmeUITests.swift; sourceTree = "<group>"; };
 		A647DDDA20E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
+		A68D6F7C20E54713005D2C79 /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewController.swift; sourceTree = "<group>"; };
+		A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A68D6F8320E54829005D2C79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
+		A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme.xib; sourceTree = "<group>"; };
+		A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,12 +133,16 @@
 		A647DDB720E541DB00B36511 /* Shiseidme */ = {
 			isa = PBXGroup;
 			children = (
+				A68D6F8720E55122005D2C79 /* Themes */,
+				A68D6F7E20E547CB005D2C79 /* Extensions */,
+				A68D6F7720E544E2005D2C79 /* ScreenletsViewControllers */,
 				A647DDB820E541DB00B36511 /* AppDelegate.swift */,
-				A647DDBA20E541DB00B36511 /* ViewController.swift */,
 				A647DDBC20E541DB00B36511 /* Main.storyboard */,
+				A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */,
 				A647DDBF20E541DD00B36511 /* Assets.xcassets */,
 				A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */,
 				A647DDC420E541DD00B36511 /* Info.plist */,
+				A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */,
 			);
 			path = Shiseidme;
 			sourceTree = "<group>";
@@ -147,6 +163,32 @@
 				A647DDDA20E541DD00B36511 /* Info.plist */,
 			);
 			path = ShiseidmeUITests;
+			sourceTree = "<group>";
+		};
+		A68D6F7720E544E2005D2C79 /* ScreenletsViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A68D6F7C20E54713005D2C79 /* ImageGalleryViewController.swift */,
+				A68D6F8320E54829005D2C79 /* LoginViewController.swift */,
+			);
+			path = ScreenletsViewControllers;
+			sourceTree = "<group>";
+		};
+		A68D6F7E20E547CB005D2C79 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A68D6F8720E55122005D2C79 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */,
+				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */,
+			);
+			path = Themes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +297,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
+				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				A647DDBE20E541DB00B36511 /* Main.storyboard in Resources */,
 			);
@@ -351,8 +395,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A647DDBB20E541DB00B36511 /* ViewController.swift in Sources */,
+				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift in Sources */,
+				A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */,
 				A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */,
+				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
+				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
+				A68D6F7D20E54713005D2C79 /* ImageGalleryViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
