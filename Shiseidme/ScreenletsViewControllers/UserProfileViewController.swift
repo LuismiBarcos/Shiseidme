@@ -7,29 +7,100 @@
 //
 
 import UIKit
+import LiferayScreens
 
-class UserProfileViewController: XibViewController {
+class UserProfileViewController: XibViewController, UserPortraitScreenletDelegate, ImageGalleryScreenletDelegate, FileDisplayScreenletDelegate {
 
+    @IBOutlet weak var userPortraitScreenlet: UserPortraitScreenlet!
+    @IBOutlet weak var imageGalleryScreenlet: ImageGalleryScreenlet!
+    @IBOutlet weak var backImageDisplayScreenlet: ImageDisplayScreenlet!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        userPortraitScreenlet.delegate = self
+        userPortraitScreenlet.autoLoad = false
+        userPortraitScreenlet.loadLoggedUserPortrait()
+        
+        imageGalleryScreenlet.delegate = self
+        imageGalleryScreenlet.folderId = 33270
+        imageGalleryScreenlet.repositoryId = 20126
+        
+        backImageDisplayScreenlet.delegate = self
+        backImageDisplayScreenlet.assetEntryId = 34716
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: UserPortraitScreenletDelegate methods
+    
+    func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitResponseImage image: UIImage) -> UIImage {
+//        self.showAlert(title: "Image received")
+        return image
     }
-    */
-
+    
+    func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitError error: NSError) {
+        self.showAlert(title: "Error")
+    }
+    
+    func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploaded attributes: [String: AnyObject]) {
+        self.showAlert(title: "Image uploaded")
+    }
+    
+    func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploadError error: NSError) {
+        self.showAlert(title: "Error in upload")
+    }
+    
+    // MARK: ImageGalleryScreenletDelegate methods
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesResponse imageEntries: [ImageEntry]) {
+//        self.showAlert(title: "Web content received")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {
+        self.showAlert(title: "Error")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntrySelected imageEntry: ImageEntry) {
+        print("item selected")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleted imageEntry: ImageEntry) {
+        self.showAlert(title: "Image deleted")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleteError error: NSError) {
+        self.showAlert(title: "Error deleting image")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadStart imageEntryUpload: ImageEntryUpload) {
+        print("image prepared to be upload")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet,
+                   onImageUploadProgress imageEntryUpload: ImageEntryUpload,
+                   totalBytesSent: UInt64,
+                   totalBytesToSend: UInt64) {
+        print("Upload progress change")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadError error: NSError) {
+        self.showAlert(title: "An error occurs in the upload process")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploaded image: ImageEntry) {
+        self.showAlert(title: "Image upload finished")
+    }
+    
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadDetailViewCreated view: ImageUploadDetailViewBase) -> Bool {
+        print("Image upload viw is instantiated")
+        return true
+    }
+    
+    // MARK: ImageDisplayScreenletDelegate methods
+    func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetResponse url: URL) {
+//        self.showAlert(title: "File received")
+    }
+    
+    func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetError error: NSError) {
+        self.showAlert(title: "Error")
+    }
 }
