@@ -17,9 +17,9 @@ class UserPortraitView_shiseidme: UserPortraitView_default {
         self.portraitImage?.layer.cornerRadius = self.portraitImage!.frame.size.width / 2
         self.portraitImage?.clipsToBounds = true
         self.borderWidth = 0.0
+        self.editButton?.layer.cornerRadius = self.editButton!.frame.size.width / 2
         
         self.screenlet?.backgroundColor = .clear
-        //
     }
 }
 

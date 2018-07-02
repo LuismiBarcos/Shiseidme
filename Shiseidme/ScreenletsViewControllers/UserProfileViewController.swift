@@ -20,6 +20,7 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
         
         userPortraitScreenlet.delegate = self
         userPortraitScreenlet.autoLoad = false
+        userPortraitScreenlet.editable = true
         userPortraitScreenlet.loadLoggedUserPortrait()
         
         imageGalleryScreenlet.delegate = self
