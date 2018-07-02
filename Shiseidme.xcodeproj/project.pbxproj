@@ -12,8 +12,6 @@
 		A647DDBE20E541DB00B36511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBC20E541DB00B36511 /* Main.storyboard */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
-		A647DDCE20E541DD00B36511 /* ShiseidmeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDCD20E541DD00B36511 /* ShiseidmeTests.swift */; };
-		A647DDD920E541DD00B36511 /* ShiseidmeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDD820E541DD00B36511 /* ShiseidmeUITests.swift */; };
 		A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */; };
 		A68D6F7D20E54713005D2C79 /* ImageGalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F7C20E54713005D2C79 /* ImageGalleryViewController.swift */; };
 		A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */; };
@@ -22,23 +20,6 @@
 		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */; };
 		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A647DDCA20E541DD00B36511 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A647DDAD20E541DB00B36511 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A647DDB420E541DB00B36511;
-			remoteInfo = Shiseidme;
-		};
-		A647DDD520E541DD00B36511 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A647DDAD20E541DB00B36511 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A647DDB420E541DB00B36511;
-			remoteInfo = Shiseidme;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2117F26F5914DB4F9740CE7C /* Pods-Shiseidme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.release.xcconfig"; sourceTree = "<group>"; };
@@ -50,12 +31,6 @@
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A647DDC220E541DD00B36511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A647DDC420E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A647DDC920E541DD00B36511 /* ShiseidmeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiseidmeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A647DDCD20E541DD00B36511 /* ShiseidmeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiseidmeTests.swift; sourceTree = "<group>"; };
-		A647DDCF20E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A647DDD420E541DD00B36511 /* ShiseidmeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShiseidmeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A647DDD820E541DD00B36511 /* ShiseidmeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShiseidmeUITests.swift; sourceTree = "<group>"; };
-		A647DDDA20E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		A68D6F7C20E54713005D2C79 /* ImageGalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryViewController.swift; sourceTree = "<group>"; };
 		A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -71,20 +46,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A647DDC620E541DD00B36511 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A647DDD120E541DD00B36511 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				A647DDB720E541DB00B36511 /* Shiseidme */,
-				A647DDCC20E541DD00B36511 /* ShiseidmeTests */,
-				A647DDD720E541DD00B36511 /* ShiseidmeUITests */,
 				A647DDB620E541DB00B36511 /* Products */,
 				801DB5D70DF575083AA0F7D9 /* Pods */,
 				95ED39666A8682BC45385E4A /* Frameworks */,
@@ -124,8 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				A647DDB520E541DB00B36511 /* Shiseidme.app */,
-				A647DDC920E541DD00B36511 /* ShiseidmeTests.xctest */,
-				A647DDD420E541DD00B36511 /* ShiseidmeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,24 +102,6 @@
 				A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */,
 			);
 			path = Shiseidme;
-			sourceTree = "<group>";
-		};
-		A647DDCC20E541DD00B36511 /* ShiseidmeTests */ = {
-			isa = PBXGroup;
-			children = (
-				A647DDCD20E541DD00B36511 /* ShiseidmeTests.swift */,
-				A647DDCF20E541DD00B36511 /* Info.plist */,
-			);
-			path = ShiseidmeTests;
-			sourceTree = "<group>";
-		};
-		A647DDD720E541DD00B36511 /* ShiseidmeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A647DDD820E541DD00B36511 /* ShiseidmeUITests.swift */,
-				A647DDDA20E541DD00B36511 /* Info.plist */,
-			);
-			path = ShiseidmeUITests;
 			sourceTree = "<group>";
 		};
 		A68D6F7720E544E2005D2C79 /* ScreenletsViewControllers */ = {
@@ -213,42 +152,6 @@
 			productReference = A647DDB520E541DB00B36511 /* Shiseidme.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A647DDC820E541DD00B36511 /* ShiseidmeTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A647DDE020E541DD00B36511 /* Build configuration list for PBXNativeTarget "ShiseidmeTests" */;
-			buildPhases = (
-				A647DDC520E541DD00B36511 /* Sources */,
-				A647DDC620E541DD00B36511 /* Frameworks */,
-				A647DDC720E541DD00B36511 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A647DDCB20E541DD00B36511 /* PBXTargetDependency */,
-			);
-			name = ShiseidmeTests;
-			productName = ShiseidmeTests;
-			productReference = A647DDC920E541DD00B36511 /* ShiseidmeTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A647DDD320E541DD00B36511 /* ShiseidmeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A647DDE320E541DD00B36511 /* Build configuration list for PBXNativeTarget "ShiseidmeUITests" */;
-			buildPhases = (
-				A647DDD020E541DD00B36511 /* Sources */,
-				A647DDD120E541DD00B36511 /* Frameworks */,
-				A647DDD220E541DD00B36511 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A647DDD620E541DD00B36511 /* PBXTargetDependency */,
-			);
-			name = ShiseidmeUITests;
-			productName = ShiseidmeUITests;
-			productReference = A647DDD420E541DD00B36511 /* ShiseidmeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -261,14 +164,6 @@
 				TargetAttributes = {
 					A647DDB420E541DB00B36511 = {
 						CreatedOnToolsVersion = 9.3.1;
-					};
-					A647DDC820E541DD00B36511 = {
-						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = A647DDB420E541DB00B36511;
-					};
-					A647DDD320E541DD00B36511 = {
-						CreatedOnToolsVersion = 9.3.1;
-						TestTargetID = A647DDB420E541DB00B36511;
 					};
 				};
 			};
@@ -286,8 +181,6 @@
 			projectRoot = "";
 			targets = (
 				A647DDB420E541DB00B36511 /* Shiseidme */,
-				A647DDC820E541DD00B36511 /* ShiseidmeTests */,
-				A647DDD320E541DD00B36511 /* ShiseidmeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -302,20 +195,6 @@
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				A647DDBE20E541DB00B36511 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A647DDC720E541DD00B36511 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A647DDD220E541DD00B36511 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,36 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A647DDC520E541DD00B36511 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A647DDCE20E541DD00B36511 /* ShiseidmeTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A647DDD020E541DD00B36511 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A647DDD920E541DD00B36511 /* ShiseidmeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A647DDCB20E541DD00B36511 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A647DDB420E541DB00B36511 /* Shiseidme */;
-			targetProxy = A647DDCA20E541DD00B36511 /* PBXContainerItemProxy */;
-		};
-		A647DDD620E541DD00B36511 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A647DDB420E541DB00B36511 /* Shiseidme */;
-			targetProxy = A647DDD520E541DD00B36511 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A647DDBC20E541DB00B36511 /* Main.storyboard */ = {
@@ -605,84 +455,6 @@
 			};
 			name = Release;
 		};
-		A647DDE120E541DD00B36511 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShiseidmeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.ShiseidmeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shiseidme.app/Shiseidme";
-			};
-			name = Debug;
-		};
-		A647DDE220E541DD00B36511 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShiseidmeTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.ShiseidmeTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shiseidme.app/Shiseidme";
-			};
-			name = Release;
-		};
-		A647DDE420E541DD00B36511 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShiseidmeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.ShiseidmeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Shiseidme;
-			};
-			name = Debug;
-		};
-		A647DDE520E541DD00B36511 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = ShiseidmeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.ShiseidmeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Shiseidme;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -700,24 +472,6 @@
 			buildConfigurations = (
 				A647DDDE20E541DD00B36511 /* Debug */,
 				A647DDDF20E541DD00B36511 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A647DDE020E541DD00B36511 /* Build configuration list for PBXNativeTarget "ShiseidmeTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A647DDE120E541DD00B36511 /* Debug */,
-				A647DDE220E541DD00B36511 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A647DDE320E541DD00B36511 /* Build configuration list for PBXNativeTarget "ShiseidmeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A647DDE420E541DD00B36511 /* Debug */,
-				A647DDE520E541DD00B36511 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

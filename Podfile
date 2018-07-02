@@ -2,5 +2,5 @@ inhibit_all_warnings!
 
 target 'Shiseidme' do
   use_frameworks!
-  pod 'LiferayScreens', :path => "/Users/luismiguelbarco/Desktop/Luismi/liferay/liferay-screens"
+  pod 'LiferayScreens', '~> 4.0.0-beta-1'
 end
