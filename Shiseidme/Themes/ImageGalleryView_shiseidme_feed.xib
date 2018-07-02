@@ -43,7 +43,7 @@
             <connections>
                 <outlet property="collectionView" destination="OWG-Ik-hNs" id="cVc-8E-TPL"/>
             </connections>
-            <point key="canvasLocation" x="271" y="268"/>
+            <point key="canvasLocation" x="270.5" y="267.5"/>
         </view>
     </objects>
 </document>

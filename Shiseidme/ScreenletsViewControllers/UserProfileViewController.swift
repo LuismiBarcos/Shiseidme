@@ -15,10 +15,18 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     @IBOutlet weak var imageGalleryScreenlet: ImageGalleryScreenlet!
     @IBOutlet weak var backImageDisplayScreenlet: ImageDisplayScreenlet!
     
+    @IBOutlet weak var username: UILabel!
+    @IBOutlet weak var email: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        username.text = SessionContext.currentContext?.user.firstName
+        email.text = SessionContext.currentContext?.user.email
+        
+        print(SessionContext.currentContext?.user.attributes)
+        
         userPortraitScreenlet.delegate = self
+        userPortraitScreenlet.presentingViewController = self
         userPortraitScreenlet.autoLoad = false
         userPortraitScreenlet.editable = true
         userPortraitScreenlet.loadLoggedUserPortrait()
@@ -61,7 +69,7 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntrySelected imageEntry: ImageEntry) {
-        print("item selected")
+        print("Open detail view")
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleted imageEntry: ImageEntry) {

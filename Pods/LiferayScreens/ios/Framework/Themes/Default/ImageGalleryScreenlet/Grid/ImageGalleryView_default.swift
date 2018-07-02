@@ -127,7 +127,7 @@ open class ImageGalleryView_default: ImageGalleryCollectionViewBase {
 
 		layout.minimumLineSpacing = spacing
 		layout.minimumInteritemSpacing = spacing
-		layout.sectionInset = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+		layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
 
 		let cellWidth = cellWidthForNumberOfColumns(columnNumber)
 		layout.itemSize = CGSize(width: cellWidth, height: cellWidth)
@@ -137,10 +137,10 @@ open class ImageGalleryView_default: ImageGalleryCollectionViewBase {
 
 	internal func cellWidthForNumberOfColumns(_ numCols: Int) -> CGFloat {
 
-		let horizontalMargins: CGFloat = 40
+		//let horizontalMargins: CGFloat = 40
 		let viewWidth = screenlet!.bounds.width
 
-		let cellWidth =  (viewWidth - horizontalMargins) / CGFloat(numCols) - CGFloat(spacing)
+		let cellWidth =  (viewWidth - (CGFloat(spacing)*(CGFloat(numCols)-1))) / CGFloat(numCols)
 
 		return cellWidth
 	}
