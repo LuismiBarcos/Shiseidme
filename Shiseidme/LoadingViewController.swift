@@ -9,7 +9,7 @@
 import UIKit
 import LiferayScreens
 
-class LoadingViewController: UIViewController {
+class LoadingViewController: XibViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,12 +20,10 @@ class LoadingViewController: UIViewController {
         self.showLogin()
     }
     
-    private func showLogin(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController =
-            !SessionContext.isLoggedIn
-            ? storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            : storyBoard.instantiateViewController(withIdentifier: "ImageGalleryViewController") as! ImageGalleryViewController
-        self.present(viewController as UIViewController, animated: true, completion: nil)
+    private func showLogin() {
+		let nextVC = SessionContext.isLoggedIn ? MainViewController() : LoginViewController()
+		let navigationController = UINavigationController(rootViewController: nextVC)
+
+		self.present(navigationController, animated: true, completion: nil)
     }
 }

@@ -9,10 +9,10 @@
 import UIKit
 import LiferayScreens
 
-class LoginViewController: UIViewController, LoginScreenletDelegate {
+class LoginViewController: XibViewController, LoginScreenletDelegate {
 
     @IBOutlet weak var screenlet: LoginScreenlet!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         screenlet.delegate = self
