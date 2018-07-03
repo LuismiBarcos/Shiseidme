@@ -22,5 +22,18 @@ class ImageGalleryView_shiseidme_profile: ImageGalleryView_default {
 		}
 		set {}
 	}
+    
+    override func doCreateLayout() -> UICollectionViewLayout {
+        let layout = UICollectionViewFlowLayout()
+        
+        let cellWidth = collectionView!.bounds.width / CGFloat(columnNumber) - spacing
+        
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        layout.itemSize = CGSize(width: cellWidth, height: cellWidth)
+        layout.minimumInteritemSpacing = spacing
+        layout.minimumLineSpacing = spacing
+        
+        return layout
+    }
 
 }
