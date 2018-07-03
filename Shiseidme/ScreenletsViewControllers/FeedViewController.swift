@@ -15,7 +15,6 @@ class FeedViewController: XibViewController, ImageGalleryScreenletDelegate {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		title = "Home"
 		screenlet.delegate = self
 		screenlet.folderId = 54469
 		screenlet.repositoryId = 20143

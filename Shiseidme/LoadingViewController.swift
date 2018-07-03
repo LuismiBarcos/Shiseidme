@@ -21,7 +21,7 @@ class LoadingViewController: XibViewController {
     }
     
     private func showLogin() {
-		let nextVC = SessionContext.isLoggedIn ? UserProfileViewController() : LoginViewController()
+		let nextVC = SessionContext.isLoggedIn ? MainViewController() : LoginViewController()
 		let navigationController = UINavigationController(rootViewController: nextVC)
 
 		self.present(navigationController, animated: true, completion: nil)
