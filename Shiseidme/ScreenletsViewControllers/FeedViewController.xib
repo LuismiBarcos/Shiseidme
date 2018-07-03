@@ -26,6 +26,7 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme_feed"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="offlinePolicy" value="cache-first"/>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
