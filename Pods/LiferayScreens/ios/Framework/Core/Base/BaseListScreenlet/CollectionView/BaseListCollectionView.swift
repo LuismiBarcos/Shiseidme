@@ -57,7 +57,8 @@ open class BaseListCollectionView: BaseListView, UICollectionViewDataSource, UIC
 
 		// Force layout
 		layoutIfNeeded()
-		collectionView?.collectionViewLayout = doCreateLayout()
+
+		collectionView?.setCollectionViewLayout(doCreateLayout(), animated: true)
 	}
 
 	override open func onChangedRows(_ oldRows: [String: [AnyObject?]]) {
