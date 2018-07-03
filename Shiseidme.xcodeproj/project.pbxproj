@@ -32,6 +32,8 @@
 		D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C3BFF20EA77A100BF83A0 /* UserView.xib */; };
 		D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */; };
 		D66C6BC720EB71DA00544BCD /* UserPortraitView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */; };
+		D66C6BCC20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BCA20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib */; };
+		D66C6BCD20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C6BCB20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift */; };
 		D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */; };
 		D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */; };
 		D693891620EA3949003EC7ED /* like_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891520EA3949003EC7ED /* like_enabled.png */; };
@@ -70,6 +72,8 @@
 		D66C3BFF20EA77A100BF83A0 /* UserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserView.xib; sourceTree = "<group>"; };
 		D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPortraitView_shiseidme.xib; sourceTree = "<group>"; };
 		D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPortraitView_shiseidme.swift; sourceTree = "<group>"; };
+		D66C6BCA20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme_profile.xib; sourceTree = "<group>"; };
+		D66C6BCB20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme_profile.swift; sourceTree = "<group>"; };
 		D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_shiseidme.swift; sourceTree = "<group>"; };
 		D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView_shiseidme.xib; sourceTree = "<group>"; };
 		D693891520EA3949003EC7ED /* like_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_enabled.png; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		A68D6F8720E55122005D2C79 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				D66C6BCB20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift */,
+				D66C6BCA20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib */,
 				D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */,
 				D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */,
 				D60306EC20EA2947005262B0 /* Cells */,
@@ -284,6 +290,7 @@
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
+				D66C6BCC20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +371,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D66C6BC720EB71DA00544BCD /* UserPortraitView_shiseidme.swift in Sources */,
+				D66C6BCD20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift in Sources */,
 				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */,
 				D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */,
 				D60306E620EA0473005262B0 /* FeedViewController.swift in Sources */,
