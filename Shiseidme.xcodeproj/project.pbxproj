@@ -11,14 +11,12 @@
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
-		A64C596320EA34DD004EBB6A /* UserPortraitView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */; };
 		A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */; };
 		A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */; };
 		A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8320E54829005D2C79 /* LoginViewController.swift */; };
 		A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */; };
 		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */; };
 		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */; };
-		A6A5A4D920EA683F0069B010 /* UserPortraitView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */; };
 		D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DB20E9FF7E005262B0 /* LoginViewController.xib */; };
 		D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DE20EA0161005262B0 /* LoadingViewController.xib */; };
 		D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306E020EA01E6005262B0 /* XibViewController.swift */; };
@@ -114,6 +112,7 @@
 				A647DDB620E541DB00B36511 /* Products */,
 				801DB5D70DF575083AA0F7D9 /* Pods */,
 				95ED39666A8682BC45385E4A /* Frameworks */,
+				D66C6BC920EB854300544BCD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -189,6 +188,15 @@
 				D60306ED20EA295B005262B0 /* FeedCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		D66C6BC920EB854300544BCD /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */,
+				A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		D693890E20EA3490003EC7ED /* Resources */ = {
@@ -268,7 +276,6 @@
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
-				A6A5A4D920EA683F0069B010 /* UserPortraitView_shiseidme.xib in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
 				D693891620EA3949003EC7ED /* like_enabled.png in Resources */,
@@ -366,7 +373,6 @@
 				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
 				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
-				A64C596320EA34DD004EBB6A /* UserPortraitView_shiseidme.swift in Sources */,
 				D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
