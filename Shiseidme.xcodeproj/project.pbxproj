@@ -14,6 +14,8 @@
 		A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */; };
 		A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */; };
 		A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */; };
+		A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */; };
+		A6360F3920EBE41000914ED9 /* CommentAddView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
@@ -56,6 +58,8 @@
 		A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell_shiseidme.xib; sourceTree = "<group>"; };
 		A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListView_shiseidme.xib; sourceTree = "<group>"; };
 		A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView_shiseidme.swift; sourceTree = "<group>"; };
+		A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAddView_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAddView_shiseidme.swift; sourceTree = "<group>"; };
 		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 				A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */,
 				A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */,
 				A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */,
+				A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */,
+				A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */,
 				D60306EC20EA2947005262B0 /* Cells */,
 				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */,
 				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */,
@@ -297,6 +303,7 @@
 				D693891820EA3A02003EC7ED /* like_disabled.png in Resources */,
 				A6360F2D20EBD2A300914ED9 /* CommentDisplayView_shiseidme.xib in Resources */,
 				A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */,
+				A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
 				A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */,
@@ -408,6 +415,7 @@
 				A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
+				A6360F3920EBE41000914ED9 /* CommentAddView_shiseidme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
