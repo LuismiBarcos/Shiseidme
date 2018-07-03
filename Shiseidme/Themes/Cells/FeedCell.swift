@@ -21,9 +21,11 @@ class FeedCell: UICollectionViewCell, AssetDisplayScreenletDelegate {
         super.awakeFromNib()
 
 		backgroundColor = .white
+		layer.cornerRadius = 3
 
 		assetDisplayScreenlet.delegate = self
-		layer.cornerRadius = 3
+		assetDisplayScreenlet.autoLoad = false
+		ratingScreenlet.autoLoad = false
     }
 
 	func screenlet(_ screenlet: AssetDisplayScreenlet, onAsset asset: Asset) -> UIView? {
@@ -52,8 +54,10 @@ class FeedCell: UICollectionViewCell, AssetDisplayScreenletDelegate {
 
 		ratingScreenlet.classPK = imageEntry.attributes["fileEntryId"]?.int64Value ?? 0
 		ratingScreenlet.className = "com.liferay.document.library.kernel.model.DLFileEntry"
+		ratingScreenlet.loadRatings()
 
 		assetDisplayScreenlet.classPK = imageEntry.attributes["userId"]?.int64Value ?? 0
 		assetDisplayScreenlet.className = "com.liferay.portal.kernel.model.User"
+		assetDisplayScreenlet.load()
 	}
 }
