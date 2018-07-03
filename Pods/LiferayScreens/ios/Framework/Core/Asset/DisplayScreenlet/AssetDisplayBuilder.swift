@@ -18,22 +18,22 @@ import UIKit
 	open class func createScreenlet(_ frame: CGRect, asset: Asset, themeName: String? = nil)
 			-> BaseScreenlet? {
 
-		if asset.isAnyMimeType(ImageDisplayScreenlet().supportedMimeTypes) {
-			return ImageDisplayScreenlet(frame: frame, themeName: themeName)
-		}
-		else if asset.isAnyMimeType(VideoDisplayScreenlet().supportedMimeTypes) {
-			return VideoDisplayScreenlet(frame: frame, themeName: themeName)
-		}
-		else if asset.isAnyMimeType(AudioDisplayScreenlet().supportedMimeTypes) {
-			return AudioDisplayScreenlet(frame: frame, themeName: themeName)
-		}
-		else if asset.isAnyMimeType(PdfDisplayScreenlet().supportedMimeTypes) {
-			return PdfDisplayScreenlet(frame: frame, themeName: themeName)
-		}
-		else if asset.isAnyMimeType(FileDisplayScreenlet().supportedMimeTypes) {
-			return FileDisplayScreenlet(frame: frame, themeName: themeName)
-		}
-		else if asset.mimeType == "text/html" {
+//		if asset.isAnyMimeType(ImageDisplayScreenlet().supportedMimeTypes) {
+//			return ImageDisplayScreenlet(frame: frame, themeName: themeName)
+//		}
+//		else if asset.isAnyMimeType(VideoDisplayScreenlet().supportedMimeTypes) {
+//			return VideoDisplayScreenlet(frame: frame, themeName: themeName)
+//		}
+//		else if asset.isAnyMimeType(AudioDisplayScreenlet().supportedMimeTypes) {
+//			return AudioDisplayScreenlet(frame: frame, themeName: themeName)
+//		}
+//		else if asset.isAnyMimeType(PdfDisplayScreenlet().supportedMimeTypes) {
+//			return PdfDisplayScreenlet(frame: frame, themeName: themeName)
+//		}
+//		else if asset.isAnyMimeType(FileDisplayScreenlet().supportedMimeTypes) {
+//			return FileDisplayScreenlet(frame: frame, themeName: themeName)
+//		}
+//		else if asset.mimeType == "text/html" {
 			if asset.classNameId == AssetClasses.getClassNameId(AssetClassNameKey_BlogsEntry)! {
 				return BlogsEntryDisplayScreenlet(frame: frame, themeName: themeName)
 			}
@@ -41,7 +41,7 @@ import UIKit
 				AssetClasses.getClassNameId(AssetClassNameKey_JournalArticle) {
 				return WebContentDisplayScreenlet(frame: frame, themeName: themeName)
 			}
-		}
+//		}
 
 		return nil
 	}
