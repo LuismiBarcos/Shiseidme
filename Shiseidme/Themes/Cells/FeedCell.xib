@@ -67,7 +67,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HGh-wZ-owJ">
-                        <rect key="frame" x="10" y="308" width="309" height="47"/>
+                        <rect key="frame" x="10" y="313" width="309" height="42"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
@@ -104,7 +104,7 @@
                 <constraint firstItem="hZN-A3-Pnc" firstAttribute="centerY" secondItem="17e-ft-JM2" secondAttribute="centerY" id="MdM-Yw-qks"/>
                 <constraint firstItem="jdG-v8-WqK" firstAttribute="centerY" secondItem="ynX-q5-EH9" secondAttribute="centerY" id="O54-8L-OAL"/>
                 <constraint firstAttribute="trailing" secondItem="C6G-56-SkR" secondAttribute="trailing" id="XmO-uf-GKO"/>
-                <constraint firstItem="HGh-wZ-owJ" firstAttribute="top" secondItem="C6G-56-SkR" secondAttribute="bottom" constant="10" id="YgZ-bo-BL1"/>
+                <constraint firstItem="HGh-wZ-owJ" firstAttribute="top" secondItem="C6G-56-SkR" secondAttribute="bottom" constant="15" id="YgZ-bo-BL1"/>
                 <constraint firstItem="VnU-HN-ZVG" firstAttribute="top" secondItem="HGh-wZ-owJ" secondAttribute="bottom" constant="15" id="amd-TN-pnh"/>
                 <constraint firstItem="C6G-56-SkR" firstAttribute="top" secondItem="ynX-q5-EH9" secondAttribute="bottom" constant="10" id="eFS-iy-kog"/>
                 <constraint firstItem="jdG-v8-WqK" firstAttribute="leading" secondItem="ynX-q5-EH9" secondAttribute="trailing" constant="10" id="hYE-Mn-Ayj"/>
