@@ -61,7 +61,8 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     // MARK: ImageGalleryScreenletDelegate methods
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesResponse imageEntries: [ImageEntry]) {
-//        self.showAlert(title: "Web content received")
+        self.showAlert(title: "Web content received")
+        
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */; };
+		A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */; };
+		A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */; };
+		A6360F2D20EBD2A300914ED9 /* CommentDisplayView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */; };
+		A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */; };
+		A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */; };
+		A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
@@ -44,6 +50,12 @@
 		2117F26F5914DB4F9740CE7C /* Pods-Shiseidme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.release.xcconfig"; sourceTree = "<group>"; };
 		4702D4A04DABC84BA31967D6 /* Pods-Shiseidme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.debug.xcconfig"; sourceTree = "<group>"; };
 		A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiseidme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentDisplayView_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListView_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView_shiseidme.swift; sourceTree = "<group>"; };
 		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +169,8 @@
 				D60306E520EA0473005262B0 /* FeedViewController.xib */,
 				D60306E820EA075E005262B0 /* UserProfileViewController.swift */,
 				D60306E920EA075E005262B0 /* UserProfileViewController.xib */,
+				A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */,
+				A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */,
 			);
 			path = ScreenletsViewControllers;
 			sourceTree = "<group>";
@@ -176,6 +190,9 @@
 				D66C6BCA20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib */,
 				D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */,
 				D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */,
+				A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */,
+				A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */,
+				A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */,
 				D60306EC20EA2947005262B0 /* Cells */,
 				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */,
 				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */,
@@ -192,6 +209,7 @@
 			children = (
 				D66C3BF520EA50CC00BF83A0 /* FeedCell.xib */,
 				D60306ED20EA295B005262B0 /* FeedCell.swift */,
+				A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -277,8 +295,11 @@
 			files = (
 				D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */,
 				D693891820EA3A02003EC7ED /* like_disabled.png in Resources */,
+				A6360F2D20EBD2A300914ED9 /* CommentDisplayView_shiseidme.xib in Resources */,
+				A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
+				A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */,
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
@@ -288,6 +309,7 @@
 				D66C3BFC20EA6AEE00BF83A0 /* comments.png in Resources */,
 				D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */,
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
+				A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
 				D66C6BCC20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib in Resources */,
@@ -380,8 +402,10 @@
 				A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */,
 				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
 				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
+				A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
 				D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */,
+				A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
 			);
