@@ -15,8 +15,8 @@
 		A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */; };
 		A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8320E54829005D2C79 /* LoginViewController.swift */; };
 		A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */; };
-		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */; };
-		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */; };
+		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */; };
+		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */; };
 		D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DB20E9FF7E005262B0 /* LoginViewController.xib */; };
 		D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DE20EA0161005262B0 /* LoadingViewController.xib */; };
 		D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306E020EA01E6005262B0 /* XibViewController.swift */; };
@@ -25,6 +25,17 @@
 		D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306E520EA0473005262B0 /* FeedViewController.xib */; };
 		D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306E820EA075E005262B0 /* UserProfileViewController.swift */; };
 		D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306E920EA075E005262B0 /* UserProfileViewController.xib */; };
+		D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306ED20EA295B005262B0 /* FeedCell.swift */; };
+		D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C3BF520EA50CC00BF83A0 /* FeedCell.xib */; };
+		D66C3BFC20EA6AEE00BF83A0 /* comments.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C3BFB20EA6AEE00BF83A0 /* comments.png */; };
+		D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C3BFD20EA779700BF83A0 /* UserView.swift */; };
+		D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C3BFF20EA77A100BF83A0 /* UserView.xib */; };
+		D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */; };
+		D66C6BC720EB71DA00544BCD /* UserPortraitView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */; };
+		D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */; };
+		D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */; };
+		D693891620EA3949003EC7ED /* like_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891520EA3949003EC7ED /* like_enabled.png */; };
+		D693891820EA3A02003EC7ED /* like_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891720EA3A02003EC7ED /* like_disabled.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,8 +51,8 @@
 		A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A68D6F8320E54829005D2C79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme.xib; sourceTree = "<group>"; };
-		A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme.swift; sourceTree = "<group>"; };
+		A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme_feed.xib; sourceTree = "<group>"; };
+		A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme_feed.swift; sourceTree = "<group>"; };
 		D60306DB20E9FF7E005262B0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D60306DE20EA0161005262B0 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		D60306E020EA01E6005262B0 /* XibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +61,17 @@
 		D60306E520EA0473005262B0 /* FeedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedViewController.xib; sourceTree = "<group>"; };
 		D60306E820EA075E005262B0 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		D60306E920EA075E005262B0 /* UserProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileViewController.xib; sourceTree = "<group>"; };
+		D60306ED20EA295B005262B0 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		D66C3BF520EA50CC00BF83A0 /* FeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		D66C3BFB20EA6AEE00BF83A0 /* comments.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comments.png; sourceTree = "<group>"; };
+		D66C3BFD20EA779700BF83A0 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		D66C3BFF20EA77A100BF83A0 /* UserView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserView.xib; sourceTree = "<group>"; };
+		D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPortraitView_shiseidme.xib; sourceTree = "<group>"; };
+		D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPortraitView_shiseidme.swift; sourceTree = "<group>"; };
+		D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_shiseidme.swift; sourceTree = "<group>"; };
+		D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView_shiseidme.xib; sourceTree = "<group>"; };
+		D693891520EA3949003EC7ED /* like_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_enabled.png; sourceTree = "<group>"; };
+		D693891720EA3A02003EC7ED /* like_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_disabled.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +124,7 @@
 		A647DDB720E541DB00B36511 /* Shiseidme */ = {
 			isa = PBXGroup;
 			children = (
+				D693890E20EA3490003EC7ED /* Resources */,
 				A68D6F8720E55122005D2C79 /* Themes */,
 				A68D6F7E20E547CB005D2C79 /* Extensions */,
 				A68D6F7720E544E2005D2C79 /* ScreenletsViewControllers */,
@@ -142,10 +165,36 @@
 		A68D6F8720E55122005D2C79 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme.xib */,
-				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift */,
+				D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */,
+				D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */,
+				D60306EC20EA2947005262B0 /* Cells */,
+				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */,
+				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */,
+				D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */,
+				D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */,
+				D66C3BFD20EA779700BF83A0 /* UserView.swift */,
+				D66C3BFF20EA77A100BF83A0 /* UserView.xib */,
 			);
 			path = Themes;
+			sourceTree = "<group>";
+		};
+		D60306EC20EA2947005262B0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D66C3BF520EA50CC00BF83A0 /* FeedCell.xib */,
+				D60306ED20EA295B005262B0 /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D693890E20EA3490003EC7ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D693891520EA3949003EC7ED /* like_enabled.png */,
+				D693891720EA3A02003EC7ED /* like_disabled.png */,
+				D66C3BFB20EA6AEE00BF83A0 /* comments.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,14 +257,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */,
+				D693891820EA3A02003EC7ED /* like_disabled.png in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
+				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
+				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
+				D693891620EA3949003EC7ED /* like_enabled.png in Resources */,
+				D66C3BFC20EA6AEE00BF83A0 /* comments.png in Resources */,
 				D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */,
-				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme.xib in Resources */,
+				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
+				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,13 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme.swift in Sources */,
+				D66C6BC720EB71DA00544BCD /* UserPortraitView_shiseidme.swift in Sources */,
+				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */,
+				D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */,
 				D60306E620EA0473005262B0 /* FeedViewController.swift in Sources */,
 				A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */,
 				D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */,
 				A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */,
 				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
+				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
+				D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
 			);

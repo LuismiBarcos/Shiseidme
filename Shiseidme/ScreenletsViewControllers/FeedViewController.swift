@@ -1,4 +1,4 @@
-//
+ //
 //  FeedViewController.swift
 //  Shiseidme
 //
@@ -17,8 +17,8 @@ class FeedViewController: XibViewController, ImageGalleryScreenletDelegate {
 		super.viewDidLoad()
 		title = "Home"
 		screenlet.delegate = self
-		screenlet.folderId = 33270
-		screenlet.repositoryId = 20126
+		screenlet.folderId = 54469
+		screenlet.repositoryId = 20143
 	}
 
 	override func viewDidAppear(_ animated: Bool) {

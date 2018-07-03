@@ -16,14 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="318" height="97"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like_enabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="l1Q-nq-mKX">
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="like_disabled.png" translatesAutoresizingMaskIntoConstraints="NO" id="l1Q-nq-mKX">
                     <rect key="frame" x="10" y="40.5" width="16" height="16"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="OOR-qz-W3h"/>
                         <constraint firstAttribute="width" constant="16" id="y1S-yD-5c9"/>
                     </constraints>
                 </imageView>
-                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-cQ-8Ll">
+                <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 likes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yS-cQ-8Ll">
                     <rect key="frame" x="36" y="38.5" width="272" height="20"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="20" id="fsF-zl-rtt"/>
@@ -51,6 +51,6 @@
         </view>
     </objects>
     <resources>
-        <image name="like_enabled.png" width="48" height="45"/>
+        <image name="like_disabled.png" width="54" height="48"/>
     </resources>
 </document>
