@@ -58,7 +58,6 @@ open class BaseListCollectionView: BaseListView, UICollectionViewDataSource, UIC
 		// Force layout
 		layoutIfNeeded()
 
-		collectionView?.reloadData()
 		collectionView?.setCollectionViewLayout(doCreateLayout(), animated: true)
 	}
 
