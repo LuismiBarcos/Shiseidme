@@ -24,7 +24,6 @@ class MainViewController: UITabBarController {
 		feedTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
 		feedVC.tabBarItem = feedTabBarItem
 
-
 		let userProfileVC = UserProfileViewController()
 
 		let profileTabBarItem = UITabBarItem(
@@ -37,5 +36,19 @@ class MainViewController: UITabBarController {
 		userProfileVC.tabBarItem = profileTabBarItem
 
 		viewControllers = [feedVC, userProfileVC]
+
+		let chatButton = UIBarButtonItem(image: UIImage(named: "chat"), style: .plain, target: nil, action: nil)
+		navigationItem.rightBarButtonItem = chatButton
+
+		addLogo()
+	}
+
+	fileprivate func addLogo() {
+		let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
+		imageView.contentMode = .scaleAspectFit
+		imageView.clipsToBounds = true
+		let image = UIImage(named: "logo.gif")
+		imageView.image = image
+		navigationItem.titleView = imageView
 	}
 }
