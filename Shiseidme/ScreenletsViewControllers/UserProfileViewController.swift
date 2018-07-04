@@ -23,8 +23,6 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
         username.text = SessionContext.currentContext?.user.firstName
         email.text = SessionContext.currentContext?.user.email
         
-        print(SessionContext.currentContext?.user.attributes)
-        
         userPortraitScreenlet.delegate = self
         userPortraitScreenlet.presentingViewController = self
         userPortraitScreenlet.autoLoad = false
@@ -32,11 +30,12 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
         userPortraitScreenlet.loadLoggedUserPortrait()
         
         imageGalleryScreenlet.delegate = self
-        imageGalleryScreenlet.folderId = 33270
-        imageGalleryScreenlet.repositoryId = 20126
+		imageGalleryScreenlet.folderId = 72155
+		imageGalleryScreenlet.repositoryId = 20143
         
         backImageDisplayScreenlet.delegate = self
-        backImageDisplayScreenlet.assetEntryId = 34716
+        backImageDisplayScreenlet.classPK = 72458
+		backImageDisplayScreenlet.className = "com.liferay.document.library.kernel.model.DLFileEntry"
     }
     
     // MARK: UserPortraitScreenletDelegate methods
@@ -47,11 +46,11 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitError error: NSError) {
-        self.showAlert(title: "Error")
+//        self.showAlert(title: "Error")
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploaded attributes: [String: AnyObject]) {
-        self.showAlert(title: "Image uploaded")
+//        self.showAlert(title: "Image uploaded")
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploadError error: NSError) {
@@ -65,7 +64,7 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {
-        self.showAlert(title: "Error")
+//        self.showAlert(title: "Error")
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntrySelected imageEntry: ImageEntry) {
@@ -110,6 +109,6 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetError error: NSError) {
-        self.showAlert(title: "Error")
+//        self.showAlert(title: "Error")
     }
 }
