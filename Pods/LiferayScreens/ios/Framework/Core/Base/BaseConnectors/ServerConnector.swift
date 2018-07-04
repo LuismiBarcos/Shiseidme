@@ -24,7 +24,7 @@ open class ServerConnector: Operation {
 		static func addConnector(_ connector: ServerConnector) {
 			if queue == nil {
 				queue = OperationQueue()
-				queue!.maxConcurrentOperationCount = 1
+				queue!.maxConcurrentOperationCount = 4
 			}
 
 			queue!.addOperation(connector)
