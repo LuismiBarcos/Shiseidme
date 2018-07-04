@@ -16,6 +16,7 @@ class FeedCell: UICollectionViewCell, AssetDisplayScreenletDelegate {
 	@IBOutlet weak var descriptionLabel: UILabel!
 	@IBOutlet weak var timeAgoLabel: UILabel!
 	@IBOutlet weak var assetDisplayScreenlet: AssetDisplayScreenlet!
+	var zoomView: UIImageView!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,7 +27,59 @@ class FeedCell: UICollectionViewCell, AssetDisplayScreenletDelegate {
 		assetDisplayScreenlet.delegate = self
 		assetDisplayScreenlet.autoLoad = false
 		ratingScreenlet.autoLoad = false
+
+		let pinch = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch))
+		image.isUserInteractionEnabled = true
+
+		image.addGestureRecognizer(pinch)
     }
+
+	@objc func handlePinch(recognizer: UIPinchGestureRecognizer) {
+
+		if recognizer.state == .began {
+			var newFrame = superview!.convert(self.frame, to: UIApplication.shared.keyWindow!)
+			newFrame.origin.y += 58.0
+			newFrame.size = CGSize(width: 355, height: 240)
+
+			zoomView = UIImageView(frame: newFrame)
+			zoomView.clipsToBounds = true
+			zoomView.contentMode = .scaleAspectFill
+			zoomView.image = image.image
+			zoomView.backgroundColor = .red
+
+			image.isHidden = true
+
+			UIApplication.shared.keyWindow?.addSubview(zoomView)
+		}
+
+		if recognizer.state == .ended  {
+			UIView.animate(withDuration: 0.3, animations: {
+				self.zoomView.transform = CGAffineTransform.identity
+			}, completion: { _ in
+				self.zoomView.removeFromSuperview()
+				self.image.isHidden = false
+			})
+		}
+		else if recognizer.state == .changed {
+			let pinchView = zoomView!
+			let bounds = pinchView.bounds
+
+			var pinchCenter = recognizer.location(in: pinchView)
+			pinchCenter.x -= bounds.midX
+			pinchCenter.y -= bounds.midY
+
+			var transform = pinchView.transform
+			let scale = recognizer.scale
+
+			transform = pinchView.transform.translatedBy(x: pinchCenter.x, y: pinchCenter.y)
+				.scaledBy(x: scale, y: scale)
+				.translatedBy(x: -pinchCenter.x, y: -pinchCenter.y)
+
+			pinchView.transform = transform
+
+			recognizer.scale = 1.0
+		}
+	}
 
 	func screenlet(_ screenlet: AssetDisplayScreenlet, onAsset asset: Asset) -> UIView? {
 		let userView = UserView()
