@@ -39,6 +39,7 @@
 		D66C6BE420EBAE5000544BCD /* profile_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE220EBAE5000544BCD /* profile_enabled.png */; };
 		D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE320EBAE5000544BCD /* profile_disabled.png */; };
 		D66C6BED20EBD7C400544BCD /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BEC20EBD7C400544BCD /* logo.gif */; };
+		D680440920ECCF4E00B64BE0 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = D680440820ECCF4E00B64BE0 /* chat.png */; };
 		D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */; };
 		D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */; };
 		D693891620EA3949003EC7ED /* like_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891520EA3949003EC7ED /* like_enabled.png */; };
@@ -84,6 +85,7 @@
 		D66C6BE220EBAE5000544BCD /* profile_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_enabled.png; sourceTree = "<group>"; };
 		D66C6BE320EBAE5000544BCD /* profile_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_disabled.png; sourceTree = "<group>"; };
 		D66C6BEC20EBD7C400544BCD /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
+		D680440820ECCF4E00B64BE0 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
 		D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_shiseidme.swift; sourceTree = "<group>"; };
 		D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView_shiseidme.xib; sourceTree = "<group>"; };
 		D693891520EA3949003EC7ED /* like_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_enabled.png; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 		D693890E20EA3490003EC7ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D680440820ECCF4E00B64BE0 /* chat.png */,
 				D66C6BDE20EBAD7E00544BCD /* feed_disabled.png */,
 				D66C6BDF20EBAD7E00544BCD /* feed_enabled.png */,
 				D66C6BE320EBAE5000544BCD /* profile_disabled.png */,
@@ -293,6 +296,7 @@
 				D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */,
 				D693891820EA3A02003EC7ED /* like_disabled.png in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
+				D680440920ECCF4E00B64BE0 /* chat.png in Resources */,
 				D66C6BE120EBAD7E00544BCD /* feed_enabled.png in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
 				D66C6BE420EBAE5000544BCD /* profile_enabled.png in Resources */,
@@ -541,6 +545,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84PJ9JE3TM;
 				INFOPLIST_FILE = Shiseidme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -559,6 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 84PJ9JE3TM;
 				INFOPLIST_FILE = Shiseidme/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

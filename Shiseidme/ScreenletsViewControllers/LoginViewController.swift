@@ -20,10 +20,10 @@ class LoginViewController: XibViewController, LoginScreenletDelegate {
     }
     
     func screenlet(_ screenlet: BaseScreenlet, onLoginResponseUserAttributes attributes: [String : AnyObject]) {
-//        self.navigationController?.popToRootViewController(animated: true)
-        let vc = UserProfileViewController()
-        self.present(vc, animated: true, completion: nil)
-//        self.performSegue(withIdentifier: "ImageGalleryViewController", sender: nil)
+        let vc = MainViewController()
+
+		let nav = UINavigationController(rootViewController: vc)
+        self.present(nav, animated: true, completion: nil)
     }
     
     func screenlet(_ screenlet: BaseScreenlet, onLoginError error: NSError) {
