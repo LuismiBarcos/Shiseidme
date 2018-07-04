@@ -15,7 +15,7 @@
             <rect key="frame" x="0.0" y="0.0" width="452" height="66"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Introduce your comment..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cp5-cR-eQs" customClass="DefaultTextField">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Introduce your comment..." textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cp5-cR-eQs">
                     <rect key="frame" x="70" y="8" width="286" height="50"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="50" id="Pxa-Hc-sBx"/>
@@ -27,7 +27,7 @@
                     </connections>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KOW-5A-wES">
-                    <rect key="frame" x="364" y="8" width="80" height="50"/>
+                    <rect key="frame" x="364" y="8" width="80" height="29.5"/>
                     <color key="backgroundColor" red="0.083623558279999996" green="0.66497266290000001" blue="0.84832382200000001" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="AW6-d0-dbR"/>
@@ -35,9 +35,10 @@
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <state key="normal">
                         <attributedString key="attributedTitle">
-                            <fragment content="Send">
+                            <fragment content="Publish">
                                 <attributes>
                                     <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                 </attributes>
                             </fragment>
                         </attributedString>
@@ -47,11 +48,11 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1lt-hi-jwe" customClass="UserPortraitScreenlet">
-                    <rect key="frame" x="8" y="7" width="52" height="52"/>
+                    <rect key="frame" x="8" y="7" width="30" height="30"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="52" id="ReJ-M6-RWN"/>
-                        <constraint firstAttribute="height" constant="52" id="peo-2h-ca1"/>
+                        <constraint firstAttribute="width" constant="45" id="ReJ-M6-RWN"/>
+                        <constraint firstAttribute="height" constant="30" id="peo-2h-ca1"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
@@ -65,10 +66,10 @@
                 <constraint firstItem="KOW-5A-wES" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="A74-gq-DAY"/>
                 <constraint firstAttribute="bottom" secondItem="KOW-5A-wES" secondAttribute="bottom" constant="8" id="Euu-41-4Wc"/>
                 <constraint firstItem="cp5-cR-eQs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="JKY-zi-lug"/>
-                <constraint firstAttribute="bottom" secondItem="1lt-hi-jwe" secondAttribute="bottom" constant="7" id="Rob-cw-F4n"/>
+                <constraint firstAttribute="bottom" secondItem="1lt-hi-jwe" secondAttribute="bottom" constant="10" id="Rob-cw-F4n"/>
                 <constraint firstAttribute="bottom" secondItem="cp5-cR-eQs" secondAttribute="bottom" constant="8" id="RtL-z0-RQr"/>
                 <constraint firstItem="cp5-cR-eQs" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Y6n-Ff-Fxz"/>
-                <constraint firstItem="1lt-hi-jwe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="7" id="e4X-79-Gqt"/>
+                <constraint firstItem="1lt-hi-jwe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="e4X-79-Gqt"/>
                 <constraint firstItem="KOW-5A-wES" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="m9K-d0-gA6"/>
                 <constraint firstItem="cp5-cR-eQs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="70" id="xam-vw-yPf"/>
                 <constraint firstItem="KOW-5A-wES" firstAttribute="leading" secondItem="cp5-cR-eQs" secondAttribute="trailing" constant="8" id="yGQ-op-dTt"/>

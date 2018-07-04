@@ -18,4 +18,25 @@ class CommentAddView_shiseidme: CommentAddView_default {
         super.onShow()
         userPortraitScreenlet.load(userId: (SessionContext.currentContext?.user.userId)!)
     }
+    
+    
+    override func onCreated() {
+        super.onCreated()
+        layer.borderWidth = 1
+        let alpha = CGFloat(0.3)
+        let borderColor =  UIColor.gray
+        layer.borderColor = borderColor.withAlphaComponent(alpha).cgColor
+        
+        sendCommentButton?.backgroundColor = nil
+    }
+    
+    override func updateButton() {
+        self.sendCommentButton?.isEnabled = !(addCommentTextField?.text?.isEmpty ?? false)
+
+        if let sendCommentButton = sendCommentButton {
+            sendCommentButton.tintColor =
+                sendCommentButton.isEnabled ? UIColor.blue :
+                UIColor.blue.withAlphaComponent(0.3)
+        }
+    }
 }
