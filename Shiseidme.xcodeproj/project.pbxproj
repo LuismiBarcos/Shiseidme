@@ -40,6 +40,14 @@
 		D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE320EBAE5000544BCD /* profile_disabled.png */; };
 		D66C6BED20EBD7C400544BCD /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BEC20EBD7C400544BCD /* logo.gif */; };
 		D680440920ECCF4E00B64BE0 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = D680440820ECCF4E00B64BE0 /* chat.png */; };
+		D680440C20ECD74B00B64BE0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680440A20ECD74B00B64BE0 /* ChatViewController.swift */; };
+		D680441120ECDA6000B64BE0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680440F20ECDA5F00B64BE0 /* Message.swift */; };
+		D680441220ECDA6000B64BE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680441020ECDA5F00B64BE0 /* Colors.swift */; };
+		D680443820ECDA9F00B64BE0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680443520ECDA9E00B64BE0 /* MessageCell.swift */; };
+		D680443920ECDA9F00B64BE0 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D680443620ECDA9F00B64BE0 /* MessageCell.xib */; };
+		D680443A20ECDA9F00B64BE0 /* OtherMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D680443720ECDA9F00B64BE0 /* OtherMessageCell.xib */; };
+		D680443C20ECDBA900B64BE0 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D680443B20ECDBA900B64BE0 /* bg.jpg */; };
+		D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = D680443D20ECDBAF00B64BE0 /* arrows.png */; };
 		D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */; };
 		D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */; };
 		D693891620EA3949003EC7ED /* like_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891520EA3949003EC7ED /* like_enabled.png */; };
@@ -86,6 +94,14 @@
 		D66C6BE320EBAE5000544BCD /* profile_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_disabled.png; sourceTree = "<group>"; };
 		D66C6BEC20EBD7C400544BCD /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		D680440820ECCF4E00B64BE0 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
+		D680440A20ECD74B00B64BE0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		D680440F20ECDA5F00B64BE0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		D680441020ECDA5F00B64BE0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		D680443520ECDA9E00B64BE0 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		D680443620ECDA9F00B64BE0 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		D680443720ECDA9F00B64BE0 /* OtherMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OtherMessageCell.xib; sourceTree = "<group>"; };
+		D680443B20ECDBA900B64BE0 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
+		D680443D20ECDBAF00B64BE0 /* arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrows.png; sourceTree = "<group>"; };
 		D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView_shiseidme.swift; sourceTree = "<group>"; };
 		D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView_shiseidme.xib; sourceTree = "<group>"; };
 		D693891520EA3949003EC7ED /* like_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_enabled.png; sourceTree = "<group>"; };
@@ -143,6 +159,7 @@
 		A647DDB720E541DB00B36511 /* Shiseidme */ = {
 			isa = PBXGroup;
 			children = (
+				D680440E20ECDA4F00B64BE0 /* Models */,
 				D693890E20EA3490003EC7ED /* Resources */,
 				A68D6F8720E55122005D2C79 /* Themes */,
 				A68D6F7E20E547CB005D2C79 /* Extensions */,
@@ -162,6 +179,7 @@
 		A68D6F7720E544E2005D2C79 /* ScreenletsViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D680443420ECDA9200B64BE0 /* Cells */,
 				D60306E220EA0346005262B0 /* MainViewController.swift */,
 				A68D6F8320E54829005D2C79 /* LoginViewController.swift */,
 				D60306DB20E9FF7E005262B0 /* LoginViewController.xib */,
@@ -169,6 +187,7 @@
 				D60306E520EA0473005262B0 /* FeedViewController.xib */,
 				D60306E820EA075E005262B0 /* UserProfileViewController.swift */,
 				D60306E920EA075E005262B0 /* UserProfileViewController.xib */,
+				D680440A20ECD74B00B64BE0 /* ChatViewController.swift */,
 			);
 			path = ScreenletsViewControllers;
 			sourceTree = "<group>";
@@ -217,9 +236,30 @@
 			name = "Recovered References";
 			sourceTree = "<group>";
 		};
+		D680440E20ECDA4F00B64BE0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D680441020ECDA5F00B64BE0 /* Colors.swift */,
+				D680440F20ECDA5F00B64BE0 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D680443420ECDA9200B64BE0 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D680443520ECDA9E00B64BE0 /* MessageCell.swift */,
+				D680443620ECDA9F00B64BE0 /* MessageCell.xib */,
+				D680443720ECDA9F00B64BE0 /* OtherMessageCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		D693890E20EA3490003EC7ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D680443D20ECDBAF00B64BE0 /* arrows.png */,
+				D680443B20ECDBA900B64BE0 /* bg.jpg */,
 				D680440820ECCF4E00B64BE0 /* chat.png */,
 				D66C6BDE20EBAD7E00544BCD /* feed_disabled.png */,
 				D66C6BDF20EBAD7E00544BCD /* feed_enabled.png */,
@@ -304,13 +344,17 @@
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
+				D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
 				D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */,
+				D680443920ECDA9F00B64BE0 /* MessageCell.xib in Resources */,
 				D693891620EA3949003EC7ED /* like_enabled.png in Resources */,
 				D66C3BFC20EA6AEE00BF83A0 /* comments.png in Resources */,
+				D680443A20ECDA9F00B64BE0 /* OtherMessageCell.xib in Resources */,
 				D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */,
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
 				D66C6BED20EBD7C400544BCD /* logo.gif in Resources */,
+				D680443C20ECDBA900B64BE0 /* bg.jpg in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
 				D66C6BCC20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib in Resources */,
@@ -339,10 +383,16 @@
 				"${BUILT_PRODUCTS_DIR}/LiferayScreens/LiferayScreens.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MDRadialProgress/MDRadialProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Reachability/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SMXMLDocument/SMXMLDocument.framework",
 				"${BUILT_PRODUCTS_DIR}/SQLCipher/SQLCipher.framework",
+				"${BUILT_PRODUCTS_DIR}/SlackTextViewController/SlackTextViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/TNRadioButtonGroup/TNRadioButtonGroup.framework",
+				"${BUILT_PRODUCTS_DIR}/WeDeploy/WeDeploy.framework",
 				"${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -358,10 +408,16 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LiferayScreens.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDRadialProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SMXMLDocument.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SQLCipher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlackTextViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TNRadioButtonGroup.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WeDeploy.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YapDatabase.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +453,7 @@
 				D66C6BC720EB71DA00544BCD /* UserPortraitView_shiseidme.swift in Sources */,
 				D66C6BCD20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift in Sources */,
 				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */,
+				D680441220ECDA6000B64BE0 /* Colors.swift in Sources */,
 				D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */,
 				D60306E620EA0473005262B0 /* FeedViewController.swift in Sources */,
 				A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */,
@@ -407,7 +464,10 @@
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
 				D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
+				D680441120ECDA6000B64BE0 /* Message.swift in Sources */,
+				D680440C20ECD74B00B64BE0 /* ChatViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
+				D680443820ECDA9F00B64BE0 /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

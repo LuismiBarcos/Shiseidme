@@ -37,10 +37,15 @@ class MainViewController: UITabBarController {
 
 		viewControllers = [feedVC, userProfileVC]
 
-		let chatButton = UIBarButtonItem(image: UIImage(named: "chat"), style: .plain, target: nil, action: nil)
+		let chatButton = UIBarButtonItem(image: UIImage(named: "chat"), style: .plain, target: self, action: #selector(goToChat))
 		navigationItem.rightBarButtonItem = chatButton
 
 		addLogo()
+	}
+
+	@objc func goToChat() {
+		let chatVC = ChatViewController()
+		self.navigationController?.pushViewController(chatVC, animated: true)
 	}
 
 	fileprivate func addLogo() {
