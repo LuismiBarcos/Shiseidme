@@ -17,12 +17,14 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
     
     @IBOutlet weak var commentAddScreenlet: CommentAddScreenlet!
     
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageScreenlet.delegate = self
         imageScreenlet.assetEntryId = 34716
+        imageScreenlet.imageMode = .scaleAspectFill
         
         commentListScreenlet.delegate = self
         commentListScreenlet.className = "com.liferay.blogs.model.BlogsEntry"
@@ -31,6 +33,44 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
         commentAddScreenlet.delegate = self
         commentAddScreenlet.className = "com.liferay.blogs.model.BlogsEntry"
         commentAddScreenlet.classPK = 33295
+        
+        NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillShow, object: nil, queue: nil) { notification in
+            self.keyboardWillAppear(notification)
+        }
+        NotificationCenter.default.addObserver(forName: Notification.Name.UIKeyboardWillHide, object: nil, queue: nil) { notification in
+            self.keyboardWillDisappear(notification)
+        }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    private func keyboardWillAppear(_ notification: Notification){
+        let bottomConstraint = self.getKeyboardHeight(notification)
+        let duration = self.getKeyboardAnimationDuration(notification)
+        self.animateAddCommentView(bottomConstraint, duration)
+    }
+    
+    private func keyboardWillDisappear(_ notification: Notification){
+        let duration = self.getKeyboardAnimationDuration(notification)
+        self.animateAddCommentView(0, duration)
+    }
+    
+    private func animateAddCommentView(_ bottomConstraint: CGFloat, _ duration: Double) {
+        self.bottomConstraint.constant = -bottomConstraint
+        UIView.animate(withDuration: duration) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    private func getKeyboardHeight(_ notification: Notification) -> CGFloat {
+        let keyboardFrame: NSValue = notification.userInfo?[UIKeyboardFrameEndUserInfoKey] as! NSValue
+        return keyboardFrame.cgRectValue.height
+    }
+    
+    private func getKeyboardAnimationDuration(_ notification: Notification) -> Double {
+        return notification.userInfo?[UIKeyboardAnimationDurationUserInfoKey] as! Double
     }
     
     // MARK: FileDisplayScreenletDelegate methods
@@ -58,7 +98,7 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
     }
     
     func screenlet(_ screenlet: CommentListScreenlet, onDeletedComment comment: Comment) {
-        self.showAlert(title: "Comment deleted")
+//        self.showAlert(title: "Comment deleted")
     }
     
     func screenlet(_ screenlet: CommentListScreenlet, onCommentDelete comment: Comment, onError error: NSError) {
@@ -76,7 +116,10 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
     // MARK: CommentAddScreenletDelegate
     
     func screenlet(_ screenlet: CommentAddScreenlet, onCommentAdded comment: Comment) {
-        self.showAlert(title: "Comment added")
+
+    
+        commentListScreenlet.viewModel?.addComment(comment)
+//        commentListScreenlet.loadList()
     }
     
     func screenlet(_ screenlet: CommentAddScreenlet, onAddCommentError error: NSError) {

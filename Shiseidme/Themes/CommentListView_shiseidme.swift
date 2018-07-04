@@ -19,8 +19,6 @@ class CommentListView_shiseidme: CommentListView_default {
     
     override func doRegisterCellNibs() {
         let uiNib = UINib(nibName: cellId, bundle: nil)
-        
         tableView?.register(uiNib, forCellReuseIdentifier: cellId)
-        
     }
 }
