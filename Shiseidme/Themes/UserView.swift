@@ -16,7 +16,9 @@ class UserView: UIView {
 
 	var user: User? {
 		didSet {
-			userPortraitScreenlet?.load(userId: user!.userId)
+			if userPortraitScreenlet?.userId != user!.userId {
+				userPortraitScreenlet?.load(userId: user!.userId)
+			}
 			usernameLabel?.text = "\(user!.firstName) \(user!.lastName)"
 		}
 	}
@@ -32,6 +34,8 @@ class UserView: UIView {
 	}
 
 	fileprivate func setup() {
+		userPortraitScreenlet?.autoLoad = false
+
 		let nib = Bundle.main.loadNibNamed("UserView", owner: self, options: nil)
 		if let view = nib?.last as? UIView {
 			self.addSubview(view)
