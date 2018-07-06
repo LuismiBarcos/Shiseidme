@@ -54,13 +54,14 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploadError error: NSError) {
-        self.showAlert(title: "Error in upload")
+//        self.showAlert(title: "Error in upload")
     }
     
     // MARK: ImageGalleryScreenletDelegate methods
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesResponse imageEntries: [ImageEntry]) {
 //        self.showAlert(title: "Web content received")
+        
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {
@@ -68,15 +69,16 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntrySelected imageEntry: ImageEntry) {
-        print("Open detail view")
+        let viewController = DetailViewController(imageClassPK: imageEntry.imageEntryId)
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleted imageEntry: ImageEntry) {
-        self.showAlert(title: "Image deleted")
+//        self.showAlert(title: "Image deleted")
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleteError error: NSError) {
-        self.showAlert(title: "Error deleting image")
+//        self.showAlert(title: "Error deleting image")
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadStart imageEntryUpload: ImageEntryUpload) {
@@ -91,11 +93,11 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadError error: NSError) {
-        self.showAlert(title: "An error occurs in the upload process")
+//        self.showAlert(title: "An error occurs in the upload process")
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploaded image: ImageEntry) {
-        self.showAlert(title: "Image upload finished")
+//        self.showAlert(title: "Image upload finished")
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadDetailViewCreated view: ImageUploadDetailViewBase) -> Bool {

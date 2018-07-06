@@ -40,6 +40,8 @@ class FeedViewController: XibViewController, ImageGalleryScreenletDelegate {
 
 	func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntrySelected imageEntry: ImageEntry) {
 		print("item selected")
+        let viewController = DetailViewController(imageClassPK: imageEntry.imageEntryId)
+        self.navigationController?.pushViewController(viewController, animated: true)
 	}
 
 	func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleted imageEntry: ImageEntry) {

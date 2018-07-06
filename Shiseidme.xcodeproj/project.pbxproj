@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */; };
+		A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */; };
+		A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */; };
+		A6360F2D20EBD2A300914ED9 /* CommentDisplayView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */; };
+		A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */; };
+		A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */; };
+		A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */; };
+		A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */; };
+		A6360F3920EBE41000914ED9 /* CommentAddView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
@@ -17,6 +25,12 @@
 		A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */; };
 		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */; };
 		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */; };
+		A6A5CD8920ECFE8D00119966 /* CommentDisplayView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */; };
+		A6A5CD8B20EF575400119966 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A5CD8A20EF575400119966 /* ChatViewController.swift */; };
+		A6A5CD8C20EF582100119966 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680443520ECDA9E00B64BE0 /* MessageCell.swift */; };
+		A6A5CD8D20EF587600119966 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D680443B20ECDBA900B64BE0 /* bg.jpg */; };
+		A6A5CD8E20EF589E00119966 /* profile_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE220EBAE5000544BCD /* profile_enabled.png */; };
+		A6A5CD8F20EF58A900119966 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BEC20EBD7C400544BCD /* logo.gif */; };
 		D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DB20E9FF7E005262B0 /* LoginViewController.xib */; };
 		D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DE20EA0161005262B0 /* LoadingViewController.xib */; };
 		D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306E020EA01E6005262B0 /* XibViewController.swift */; };
@@ -36,17 +50,12 @@
 		D66C6BCD20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C6BCB20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift */; };
 		D66C6BE020EBAD7E00544BCD /* feed_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BDE20EBAD7E00544BCD /* feed_disabled.png */; };
 		D66C6BE120EBAD7E00544BCD /* feed_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BDF20EBAD7E00544BCD /* feed_enabled.png */; };
-		D66C6BE420EBAE5000544BCD /* profile_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE220EBAE5000544BCD /* profile_enabled.png */; };
 		D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE320EBAE5000544BCD /* profile_disabled.png */; };
-		D66C6BED20EBD7C400544BCD /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BEC20EBD7C400544BCD /* logo.gif */; };
 		D680440920ECCF4E00B64BE0 /* chat.png in Resources */ = {isa = PBXBuildFile; fileRef = D680440820ECCF4E00B64BE0 /* chat.png */; };
-		D680440C20ECD74B00B64BE0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680440A20ECD74B00B64BE0 /* ChatViewController.swift */; };
 		D680441120ECDA6000B64BE0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680440F20ECDA5F00B64BE0 /* Message.swift */; };
 		D680441220ECDA6000B64BE0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680441020ECDA5F00B64BE0 /* Colors.swift */; };
-		D680443820ECDA9F00B64BE0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D680443520ECDA9E00B64BE0 /* MessageCell.swift */; };
 		D680443920ECDA9F00B64BE0 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D680443620ECDA9F00B64BE0 /* MessageCell.xib */; };
 		D680443A20ECDA9F00B64BE0 /* OtherMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D680443720ECDA9F00B64BE0 /* OtherMessageCell.xib */; };
-		D680443C20ECDBA900B64BE0 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D680443B20ECDBA900B64BE0 /* bg.jpg */; };
 		D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = D680443D20ECDBAF00B64BE0 /* arrows.png */; };
 		D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D693891120EA3891003EC7ED /* RatingView_shiseidme.swift */; };
 		D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = D693891320EA389E003EC7ED /* RatingView_shiseidme.xib */; };
@@ -58,6 +67,14 @@
 		2117F26F5914DB4F9740CE7C /* Pods-Shiseidme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.release.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.release.xcconfig"; sourceTree = "<group>"; };
 		4702D4A04DABC84BA31967D6 /* Pods-Shiseidme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Shiseidme.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Shiseidme/Pods-Shiseidme.debug.xcconfig"; sourceTree = "<group>"; };
 		A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiseidme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentDisplayView_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListView_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView_shiseidme.swift; sourceTree = "<group>"; };
+		A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAddView_shiseidme.xib; sourceTree = "<group>"; };
+		A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAddView_shiseidme.swift; sourceTree = "<group>"; };
 		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -71,6 +88,8 @@
 		A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme_feed.xib; sourceTree = "<group>"; };
 		A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme_feed.swift; sourceTree = "<group>"; };
 		A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPortraitView_shiseidme.xib; sourceTree = "<group>"; };
+		A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDisplayView_shiseidme.swift; sourceTree = "<group>"; };
+		A6A5CD8A20EF575400119966 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D60306DB20E9FF7E005262B0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D60306DE20EA0161005262B0 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		D60306E020EA01E6005262B0 /* XibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
@@ -180,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				D680443420ECDA9200B64BE0 /* Cells */,
+				A6A5CD8A20EF575400119966 /* ChatViewController.swift */,
 				D60306E220EA0346005262B0 /* MainViewController.swift */,
 				A68D6F8320E54829005D2C79 /* LoginViewController.swift */,
 				D60306DB20E9FF7E005262B0 /* LoginViewController.xib */,
@@ -187,7 +207,8 @@
 				D60306E520EA0473005262B0 /* FeedViewController.xib */,
 				D60306E820EA075E005262B0 /* UserProfileViewController.swift */,
 				D60306E920EA075E005262B0 /* UserProfileViewController.xib */,
-				D680440A20ECD74B00B64BE0 /* ChatViewController.swift */,
+				A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */,
+				A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */,
 			);
 			path = ScreenletsViewControllers;
 			sourceTree = "<group>";
@@ -207,6 +228,12 @@
 				D66C6BCA20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib */,
 				D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */,
 				D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */,
+				A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */,
+				A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */,
+				A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */,
+				A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */,
+				A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */,
+				A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */,
 				D60306EC20EA2947005262B0 /* Cells */,
 				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */,
 				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */,
@@ -223,6 +250,7 @@
 			children = (
 				D66C3BF520EA50CC00BF83A0 /* FeedCell.xib */,
 				D60306ED20EA295B005262B0 /* FeedCell.swift */,
+				A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -232,6 +260,7 @@
 			children = (
 				A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */,
 				A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */,
+				D680440A20ECD74B00B64BE0 /* ChatViewController.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -335,26 +364,31 @@
 			files = (
 				D693891420EA389E003EC7ED /* RatingView_shiseidme.xib in Resources */,
 				D693891820EA3A02003EC7ED /* like_disabled.png in Resources */,
+				A6360F2D20EBD2A300914ED9 /* CommentDisplayView_shiseidme.xib in Resources */,
+				A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */,
+				A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
 				D680440920ECCF4E00B64BE0 /* chat.png in Resources */,
 				D66C6BE120EBAD7E00544BCD /* feed_enabled.png in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
-				D66C6BE420EBAE5000544BCD /* profile_enabled.png in Resources */,
+				A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */,
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
+				A6A5CD8E20EF589E00119966 /* profile_enabled.png in Resources */,
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
 				D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */,
+				A6A5CD8F20EF58A900119966 /* logo.gif in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
 				D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */,
 				D680443920ECDA9F00B64BE0 /* MessageCell.xib in Resources */,
 				D693891620EA3949003EC7ED /* like_enabled.png in Resources */,
+				A6A5CD8D20EF587600119966 /* bg.jpg in Resources */,
 				D66C3BFC20EA6AEE00BF83A0 /* comments.png in Resources */,
 				D680443A20ECDA9F00B64BE0 /* OtherMessageCell.xib in Resources */,
 				D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */,
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
-				D66C6BED20EBD7C400544BCD /* logo.gif in Resources */,
-				D680443C20ECDBA900B64BE0 /* bg.jpg in Resources */,
+				A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
 				D66C6BCC20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib in Resources */,
@@ -452,6 +486,7 @@
 			files = (
 				D66C6BC720EB71DA00544BCD /* UserPortraitView_shiseidme.swift in Sources */,
 				D66C6BCD20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift in Sources */,
+				A6A5CD8B20EF575400119966 /* ChatViewController.swift in Sources */,
 				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */,
 				D680441220ECDA6000B64BE0 /* Colors.swift in Sources */,
 				D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */,
@@ -460,14 +495,17 @@
 				D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */,
 				A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */,
 				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
+				A6A5CD8C20EF582100119966 /* MessageCell.swift in Sources */,
+				A6A5CD8920ECFE8D00119966 /* CommentDisplayView_shiseidme.swift in Sources */,
 				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
+				A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
 				D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */,
+				A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
 				D680441120ECDA6000B64BE0 /* Message.swift in Sources */,
-				D680440C20ECD74B00B64BE0 /* ChatViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
-				D680443820ECDA9F00B64BE0 /* MessageCell.swift in Sources */,
+				A6360F3920EBE41000914ED9 /* CommentAddView_shiseidme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
