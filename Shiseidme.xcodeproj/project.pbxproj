@@ -31,6 +31,9 @@
 		A6A5CD8D20EF587600119966 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D680443B20ECDBA900B64BE0 /* bg.jpg */; };
 		A6A5CD8E20EF589E00119966 /* profile_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BE220EBAE5000544BCD /* profile_enabled.png */; };
 		A6A5CD8F20EF58A900119966 /* logo.gif in Resources */ = {isa = PBXBuildFile; fileRef = D66C6BEC20EBD7C400544BCD /* logo.gif */; };
+		A6A5CD9120EF68BB00119966 /* plus-button.png in Resources */ = {isa = PBXBuildFile; fileRef = A6A5CD9020EF68BB00119966 /* plus-button.png */; };
+		A6A5CD9320EF8A0300119966 /* ImageUploadDetailView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6A5CD9220EF8A0300119966 /* ImageUploadDetailView_shiseidme.xib */; };
+		A6A5CD9520EF8A2700119966 /* ImageUploadDetailView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A5CD9420EF8A2700119966 /* ImageUploadDetailView_shiseidme.swift */; };
 		D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DB20E9FF7E005262B0 /* LoginViewController.xib */; };
 		D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DE20EA0161005262B0 /* LoadingViewController.xib */; };
 		D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306E020EA01E6005262B0 /* XibViewController.swift */; };
@@ -90,6 +93,9 @@
 		A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPortraitView_shiseidme.xib; sourceTree = "<group>"; };
 		A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDisplayView_shiseidme.swift; sourceTree = "<group>"; };
 		A6A5CD8A20EF575400119966 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A6A5CD9020EF68BB00119966 /* plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-button.png"; sourceTree = "<group>"; };
+		A6A5CD9220EF8A0300119966 /* ImageUploadDetailView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageUploadDetailView_shiseidme.xib; sourceTree = "<group>"; };
+		A6A5CD9420EF8A2700119966 /* ImageUploadDetailView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploadDetailView_shiseidme.swift; sourceTree = "<group>"; };
 		D60306DB20E9FF7E005262B0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D60306DE20EA0161005262B0 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		D60306E020EA01E6005262B0 /* XibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
@@ -234,6 +240,8 @@
 				A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */,
 				A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */,
 				A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */,
+				A6A5CD9220EF8A0300119966 /* ImageUploadDetailView_shiseidme.xib */,
+				A6A5CD9420EF8A2700119966 /* ImageUploadDetailView_shiseidme.swift */,
 				D60306EC20EA2947005262B0 /* Cells */,
 				A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */,
 				A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */,
@@ -297,6 +305,7 @@
 				D693891520EA3949003EC7ED /* like_enabled.png */,
 				D693891720EA3A02003EC7ED /* like_disabled.png */,
 				D66C3BFB20EA6AEE00BF83A0 /* comments.png */,
+				A6A5CD9020EF68BB00119966 /* plus-button.png */,
 				D66C6BEC20EBD7C400544BCD /* logo.gif */,
 			);
 			path = Resources;
@@ -377,6 +386,8 @@
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
+				A6A5CD9320EF8A0300119966 /* ImageUploadDetailView_shiseidme.xib in Resources */,
+				A6A5CD9120EF68BB00119966 /* plus-button.png in Resources */,
 				D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */,
 				A6A5CD8F20EF58A900119966 /* logo.gif in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
@@ -497,6 +508,7 @@
 				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
 				A6A5CD8C20EF582100119966 /* MessageCell.swift in Sources */,
 				A6A5CD8920ECFE8D00119966 /* CommentDisplayView_shiseidme.swift in Sources */,
+				A6A5CD9520EF8A2700119966 /* ImageUploadDetailView_shiseidme.swift in Sources */,
 				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
 				A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
@@ -643,16 +655,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84PJ9JE3TM;
+				DEVELOPMENT_TEAM = 3CY8Z78944;
 				INFOPLIST_FILE = Shiseidme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.Shiseidme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.Shiseidme00000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -662,16 +675,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 84PJ9JE3TM;
+				DEVELOPMENT_TEAM = 3CY8Z78944;
 				INFOPLIST_FILE = Shiseidme/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.Shiseidme;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.Shiseidme00000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

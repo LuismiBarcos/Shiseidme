@@ -62,5 +62,7 @@ open class ImageUploadDetailViewBase: UIView {
 			image?.resizeImage(toWidth: 300, completion: actionClosure)
 		}
 	}
+    
+    open var righButton: UIBarButtonItem?
 
 }

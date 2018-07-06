@@ -23,6 +23,7 @@ open class ImageUploadDetailViewController_default: UIViewController {
 	public init(imageUploadDetailview: ImageUploadDetailViewBase) {
 		super.init(nibName: nil, bundle: nil)
 		self.imageUploadDetailview = imageUploadDetailview
+    
 	}
 
 	public required init?(coder aDecoder: NSCoder) {
@@ -34,9 +35,12 @@ open class ImageUploadDetailViewController_default: UIViewController {
     override open func viewDidLoad() {
         super.viewDidLoad()
 
+    
 		edgesForExtendedLayout = UIRectEdge()
 
 		addNavBarButtons()
+        
+        self.imageUploadDetailview?.righButton = navigationItem.rightBarButtonItem
 
 		addImageUploadView()
     }
