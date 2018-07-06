@@ -25,6 +25,7 @@
 		A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */; };
 		A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */; };
 		A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */; };
+		A6A5CD8920ECFE8D00119966 /* CommentDisplayView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */; };
 		D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DB20E9FF7E005262B0 /* LoginViewController.xib */; };
 		D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60306DE20EA0161005262B0 /* LoadingViewController.xib */; };
 		D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60306E020EA01E6005262B0 /* XibViewController.swift */; };
@@ -73,6 +74,7 @@
 		A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme_feed.xib; sourceTree = "<group>"; };
 		A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme_feed.swift; sourceTree = "<group>"; };
 		A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPortraitView_shiseidme.xib; sourceTree = "<group>"; };
+		A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDisplayView_shiseidme.swift; sourceTree = "<group>"; };
 		D60306DB20E9FF7E005262B0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		D60306DE20EA0161005262B0 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
 		D60306E020EA01E6005262B0 /* XibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				D66C6BC520EB71DA00544BCD /* UserPortraitView_shiseidme.swift */,
 				D66C6BC420EB71DA00544BCD /* UserPortraitView_shiseidme.xib */,
 				A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */,
+				A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */,
 				A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */,
 				A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */,
 				A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */,
@@ -408,6 +411,7 @@
 				D60306E120EA01E6005262B0 /* XibViewController.swift in Sources */,
 				A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */,
 				A68D6F8620E54B3F005D2C79 /* LoadingViewController.swift in Sources */,
+				A6A5CD8920ECFE8D00119966 /* CommentDisplayView_shiseidme.swift in Sources */,
 				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
 				A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
