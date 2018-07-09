@@ -11,6 +11,12 @@ import LiferayScreens
 
 class ImageUploadDetailView_shiseidme: ImageUploadDetailView_default {
     
+    override var righButton: UIBarButtonItem? {
+        didSet{
+            self.righButton?.isEnabled = false
+        }
+    }
+    
     override func initialize() {
         super.initialize()
         self.righButton?.isEnabled = false
@@ -20,6 +26,14 @@ class ImageUploadDetailView_shiseidme: ImageUploadDetailView_default {
         super.textViewDidEndEditing(textView)
         if textView.text.isEmpty {
             self.righButton?.isEnabled = false
+        }
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            self.righButton?.isEnabled = false
+        } else {
+            self.righButton?.isEnabled = true
         }
     }
 }

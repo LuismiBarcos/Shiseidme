@@ -13,7 +13,7 @@ class LoadingViewController: XibViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        SessionContext.loadStoredCredentials()
+//        SessionContext.loadStoredCredentials()
     }
     
     override func viewDidAppear(_ animated: Bool) {
