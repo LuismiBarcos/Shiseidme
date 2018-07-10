@@ -17,6 +17,7 @@ class LoginViewController: XibViewController, LoginScreenletDelegate {
         super.viewDidLoad()
         screenlet.delegate = self
         screenlet.saveCredentials = true
+        screenlet.presentingViewController = self
     }
     
     func screenlet(_ screenlet: BaseScreenlet, onLoginResponseUserAttributes attributes: [String : AnyObject]) {
