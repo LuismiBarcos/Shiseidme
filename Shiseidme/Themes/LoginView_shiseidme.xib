@@ -70,7 +70,7 @@
                             </constraints>
                         </view>
                         <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-e9-Lbg" customClass="DefaultTextField">
-                            <rect key="frame" x="30" y="273" width="287" height="50"/>
+                            <rect key="frame" x="30" y="224.5" width="287" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="kR7-TD-EWl"/>
                             </constraints>
@@ -90,7 +90,7 @@
                             </connections>
                         </textField>
                         <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XBk-dU-LXI" customClass="DefaultTextField">
-                            <rect key="frame" x="30" y="331" width="287" height="51"/>
+                            <rect key="frame" x="30" y="282.5" width="287" height="51"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="51" id="CNl-Mk-h8J"/>
                             </constraints>
@@ -111,7 +111,7 @@
                             </connections>
                         </textField>
                         <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kq3-Yb-Mpp">
-                            <rect key="frame" x="30" y="407" width="287" height="50"/>
+                            <rect key="frame" x="30" y="358.5" width="287" height="50"/>
                             <color key="backgroundColor" red="0.082352941176470587" green="0.49411764705882355" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="T07-nA-0QZ"/>
@@ -124,7 +124,7 @@
                             </connections>
                         </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_xl.gif" translatesAutoresizingMaskIntoConstraints="NO" id="QD2-eg-lFq">
-                            <rect key="frame" x="41" y="160" width="265" height="100"/>
+                            <rect key="frame" x="41" y="111.5" width="265" height="100"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="OUa-nw-Phg"/>
                             </constraints>
@@ -133,11 +133,11 @@
                     <constraints>
                         <constraint firstItem="QD2-eg-lFq" firstAttribute="leading" secondItem="QyT-Vh-USo" secondAttribute="leading" constant="41" id="0ZM-v4-M8c"/>
                         <constraint firstItem="kq3-Yb-Mpp" firstAttribute="top" secondItem="XBk-dU-LXI" secondAttribute="bottom" constant="25" id="2Av-Fy-pC8"/>
+                        <constraint firstItem="XBk-dU-LXI" firstAttribute="centerY" secondItem="QyT-Vh-USo" secondAttribute="centerY" id="DZp-Hb-4Xq"/>
                         <constraint firstAttribute="trailing" secondItem="XBk-dU-LXI" secondAttribute="trailing" constant="30" id="E4j-Je-nEt"/>
                         <constraint firstAttribute="trailing" secondItem="kq3-Yb-Mpp" secondAttribute="trailing" constant="30" id="MEG-Xn-Ea2"/>
                         <constraint firstAttribute="bottom" secondItem="hzs-rx-l4v" secondAttribute="bottom" id="PdQ-3M-gf3"/>
                         <constraint firstItem="XBk-dU-LXI" firstAttribute="top" secondItem="lQM-e9-Lbg" secondAttribute="bottom" constant="8" id="Ppk-hF-24l"/>
-                        <constraint firstItem="lQM-e9-Lbg" firstAttribute="top" secondItem="QyT-Vh-USo" secondAttribute="top" constant="273" id="UfE-1G-RXo"/>
                         <constraint firstAttribute="trailing" secondItem="QD2-eg-lFq" secondAttribute="trailing" constant="41" id="Uug-N0-yiC"/>
                         <constraint firstAttribute="trailing" secondItem="hzs-rx-l4v" secondAttribute="trailing" id="WRv-hh-S1N"/>
                         <constraint firstItem="lQM-e9-Lbg" firstAttribute="leading" secondItem="QyT-Vh-USo" secondAttribute="leading" constant="30" id="YnU-0N-2v9"/>

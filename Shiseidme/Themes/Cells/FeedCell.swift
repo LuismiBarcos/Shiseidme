@@ -39,7 +39,7 @@ class FeedCell: UICollectionViewCell, AssetDisplayScreenletDelegate {
 		if recognizer.state == .began {
 			var newFrame = superview!.convert(self.frame, to: UIApplication.shared.keyWindow!)
 			newFrame.origin.y += 58.0
-			newFrame.size = CGSize(width: 355, height: 240)
+			newFrame.size = CGSize(width: self.image.frame.width, height: self.image.frame.height)
 
 			zoomView = UIImageView(frame: newFrame)
 			zoomView.clipsToBounds = true

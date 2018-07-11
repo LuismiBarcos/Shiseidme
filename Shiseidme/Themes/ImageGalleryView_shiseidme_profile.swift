@@ -26,7 +26,7 @@ class ImageGalleryView_shiseidme_profile: ImageGalleryView_default {
     override func doCreateLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
         
-        let cellWidth = screenlet!.bounds.width / CGFloat(columnNumber) - spacing
+        let cellWidth = UIScreen.main.bounds.width / CGFloat(columnNumber) - spacing
         
         layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         layout.itemSize = CGSize(width: cellWidth, height: cellWidth)
