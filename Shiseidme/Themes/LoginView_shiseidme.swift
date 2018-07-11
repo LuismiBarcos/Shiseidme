@@ -11,6 +11,8 @@ import LiferayScreens
 
 class LoginView_shiseidme: LoginView_default, UITextFieldDelegate {
     
+    let blueColor = UIColor(red: 21/255, green: 126/255, blue: 251/255, alpha: 1)
+    
     @IBOutlet weak var signUpView: UIView!
     @IBAction func signUpButton(_ sender: UIButton) {
         let viewController = SignUpViewController()
@@ -23,32 +25,40 @@ class LoginView_shiseidme: LoginView_default, UITextFieldDelegate {
         super.onCreated()
         setBorderInSignUp()
         setLeftImageToPasswordField()
-        enableLoginButton()
-//        userNameField?.delegate = self
-//        passwordField?.delegate = self
-//        disableLoginButton()
+        userNameField?.delegate = self
+        passwordField?.delegate = self
+        disableLoginButton()
     }
     
-    @objc func textFieldDidChange(_ textField: UITextField) {
-        if (!(userNameField?.text?.isEmpty)!) && (!(passwordField?.text?.isEmpty)!) {
+    @IBAction func textFieldDidChanged(_ sender: UITextField) {
+        if oneFieldIsEmpty(){
+            disableLoginButton()
+        } else {
             enableLoginButton()
         }
     }
+    
+    // MARK: private methods
     
     private func disableLoginButton() {
         loginButton?.isEnabled = false
         loginButton?.backgroundColor = UIColor.white
         loginButton?.layer.borderWidth = 1
-        loginButton?.layer.borderColor = UIColor.blue.cgColor
-        loginButton?.titleLabel?.textColor = UIColor.blue
-        loginButton?.alpha = 0.3
+        loginButton?.layer.borderColor = blueColor.cgColor
+        loginButton?.titleLabel?.textColor = blueColor
+        loginButton?.alpha = 0.5
     }
     
     private func enableLoginButton() {
         loginButton?.isEnabled = true
-        loginButton?.backgroundColor = UIColor(red: 21/255, green: 126/255, blue: 251/255, alpha: 1)
-        
+        loginButton?.alpha = 1
+        loginButton?.layer.borderWidth = 0
+        loginButton?.backgroundColor = blueColor
         loginButton?.titleLabel?.textColor = UIColor.white
+    }
+    
+    private func oneFieldIsEmpty() -> Bool {
+        return (userNameField?.text?.isEmpty)! || (passwordField?.text?.isEmpty)!
     }
     
     private func setBorderInSignUp(){
@@ -68,6 +78,4 @@ class LoginView_shiseidme: LoginView_default, UITextFieldDelegate {
         imageView.image = image;
         (passwordField as? DefaultTextField)?.leftImage = image
     }
-    
-    
 }

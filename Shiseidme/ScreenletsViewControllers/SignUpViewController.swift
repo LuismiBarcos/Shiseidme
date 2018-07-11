@@ -14,12 +14,16 @@ class SignUpViewController: UIViewController, SignUpScreenletDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         screenlet.delegate = self
+        screenlet.anonymousApiUserName = "anonymous1@liferay.com"
+        screenlet.anonymousApiPassword = "anonymous1"
     }
     
     //MARK: SignUpScreenletDelegate
     
     func screenlet(_ screenlet: SignUpScreenlet, onSignUpResponseUserAttributes attributes: [String: AnyObject]) {
-        showAlert(title: "Sign up complete")
+        let nextVC = MainViewController()
+        let navigationController = UINavigationController(rootViewController: nextVC)
+        self.present(navigationController, animated: true, completion: nil)
     }
     
     func screenlet(_ screenlet: SignUpScreenlet, onSignUpError error: NSError) {
