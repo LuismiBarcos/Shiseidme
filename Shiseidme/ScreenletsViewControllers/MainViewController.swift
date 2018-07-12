@@ -8,6 +8,7 @@
 
 import UIKit
 import LiferayScreens
+import iOSPhotoEditor
 
 class FakeViewController: ImageUploadDetailViewController_default {
     
@@ -17,9 +18,9 @@ class FakeViewController: ImageUploadDetailViewController_default {
     }
 }
 
-class MainViewController: UITabBarController, UITabBarControllerDelegate {
+class MainViewController: UITabBarController, UITabBarControllerDelegate, PhotoEditorDelegate {
 
-    let prueba = ImageGalleryScreenlet(frame: .zero, themeName: "shiseidme")
+    let emptyGalleryScreenlet = ImageGalleryScreenlet(frame: .zero, themeName: "shiseidme")
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -27,9 +28,9 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 		tabBar.tintColor = .black
         delegate = self
 
-        prueba.presentingViewController = self
-        prueba.folderId = 72155
-        prueba.repositoryId = 20143
+        emptyGalleryScreenlet.presentingViewController = self
+        emptyGalleryScreenlet.folderId = 72155
+        emptyGalleryScreenlet.repositoryId = 20143
         
         
 		let feedVC = FeedViewController()
@@ -84,11 +85,26 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
     // MARK
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController is FakeViewController {
-            prueba.startMediaSelectorAndUpload()
+//            emptyGalleryScreenlet.startMediaSelectorAndUpload()
             
+            let picker = UIImagePickerController()
+            picker.delegate = self
+            picker.sourceType = .photoLibrary
+            present(picker, animated: true, completion: nil)
             
             return false
         }
         return true
+    }
+    
+    // MARK photoEditorProtocol
+    
+    func doneEditing(image: UIImage) {
+        let imageUpload = ImageEntryUpload(image: image, title: "")
+        emptyGalleryScreenlet.showDetailUploadView(imageUpload)
+    }
+    
+    func canceledEditing() {
+        print("Canceled")
     }
 }

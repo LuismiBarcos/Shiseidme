@@ -25,6 +25,7 @@ PODS:
     - CocoaLumberjack/Default
   - Cordova (4.5.4)
   - DTPickerPresenter (0.2.0)
+  - iOSPhotoEditor (0.5)
   - KeychainAccess (3.1.1)
   - Kingfisher (4.8.0)
   - Liferay-iOS-SDK (7.1-beta2):
@@ -120,6 +121,7 @@ PODS:
     - YapDatabase/SQLCipher/Core
 
 DEPENDENCIES:
+  - iOSPhotoEditor
   - LiferayScreens (~> 4.0.0-beta-1)
   - SlackTextViewController
   - WeDeploy
@@ -131,6 +133,7 @@ SPEC REPOS:
     - CocoaLumberjack
     - Cordova
     - DTPickerPresenter
+    - iOSPhotoEditor
     - KeychainAccess
     - Kingfisher
     - Liferay-iOS-SDK
@@ -155,6 +158,7 @@ SPEC CHECKSUMS:
   CocoaLumberjack: aa9dcab71bdf9eaf2a63bbd9ddc87863efe45457
   Cordova: 90a337977b8667a80483f559268c82062b1183da
   DTPickerPresenter: 1976573e3475534559b6ec1dad64b2ece16c966d
+  iOSPhotoEditor: 0ddc84bcef9fe73fe8cc45ac999b89e0aa207aea
   KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
   Kingfisher: 976d828df2b24834c6a3f2fc4d82cdbd26552be1
   Liferay-iOS-SDK: ab249a9bcd51c9db5ded1d7ebf9f688f6f24cb89
@@ -173,6 +177,6 @@ SPEC CHECKSUMS:
   WeDeploy: f1359e5efa88c6de4d25e4ff0fa31b0f7bbf53c9
   YapDatabase: b1e43555a34a5298e23a045be96817a5ef0da58f
 
-PODFILE CHECKSUM: 1024b7de024e72adfed737ccf5b596693f77fa04
+PODFILE CHECKSUM: ba551b5ba65dc991851cd4f1038e44dfdadb529f
 
-COCOAPODS: 1.5.2
+COCOAPODS: 1.5.3

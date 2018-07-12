@@ -165,6 +165,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TNRadioButtonGroup/TNRadioButtonGroup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WeDeploy/WeDeploy.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iOSPhotoEditor/iOSPhotoEditor.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework"
@@ -189,6 +190,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/TNRadioButtonGroup/TNRadioButtonGroup.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/WeDeploy/WeDeploy.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/YapDatabase/YapDatabase.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iOSPhotoEditor/iOSPhotoEditor.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
