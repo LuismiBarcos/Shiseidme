@@ -19,6 +19,7 @@
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
+		A68AF5EC20F77F780064DF75 /* MainViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68AF5EB20F77F780064DF75 /* MainViewControllerExtensions.swift */; };
 		A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */; };
 		A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */; };
 		A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8320E54829005D2C79 /* LoginViewController.swift */; };
@@ -91,6 +92,7 @@
 		A647DDC220E541DD00B36511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A647DDC420E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPortraitView_shiseidme.swift; sourceTree = "<group>"; };
+		A68AF5EB20F77F780064DF75 /* MainViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A68D6F8320E54829005D2C79 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */,
+				A68AF5EB20F77F780064DF75 /* MainViewControllerExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				A6A5CD9520EF8A2700119966 /* ImageUploadDetailView_shiseidme.swift in Sources */,
 				D66C3BFE20EA779700BF83A0 /* UserView.swift in Sources */,
 				A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */,
+				A68AF5EC20F77F780064DF75 /* MainViewControllerExtensions.swift in Sources */,
 				D60306E320EA0346005262B0 /* MainViewController.swift in Sources */,
 				D693891220EA3891003EC7ED /* RatingView_shiseidme.swift in Sources */,
 				A6A5CD9920F3498D00119966 /* LoginView_shiseidme.swift in Sources */,

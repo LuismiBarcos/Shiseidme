@@ -18,7 +18,7 @@ class FakeViewController: ImageUploadDetailViewController_default {
     }
 }
 
-class MainViewController: UITabBarController, UITabBarControllerDelegate, PhotoEditorDelegate {
+class MainViewController: UITabBarController, UITabBarControllerDelegate {
 
     let emptyGalleryScreenlet = ImageGalleryScreenlet(frame: .zero, themeName: "shiseidme")
     
@@ -85,26 +85,9 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate, PhotoE
     // MARK
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
         if viewController is FakeViewController {
-//            emptyGalleryScreenlet.startMediaSelectorAndUpload()
-            
-            let picker = UIImagePickerController()
-            picker.delegate = self
-            picker.sourceType = .photoLibrary
-            present(picker, animated: true, completion: nil)
-            
+            self.showMediaSelectorAndPhotoEditor()
             return false
         }
         return true
-    }
-    
-    // MARK photoEditorProtocol
-    
-    func doneEditing(image: UIImage) {
-        let imageUpload = ImageEntryUpload(image: image, title: "")
-        emptyGalleryScreenlet.showDetailUploadView(imageUpload)
-    }
-    
-    func canceledEditing() {
-        print("Canceled")
     }
 }
