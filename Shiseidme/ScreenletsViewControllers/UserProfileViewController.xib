@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,12 +24,16 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.45000000000000001" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-3p-fot" customClass="ImageDisplayScreenlet">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                <view alpha="0.45000000000000001" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-3p-fot" customClass="ImageDisplayScreenlet">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="500" id="L30-2p-aPM"/>
+                        <constraint firstAttribute="height" constant="250" id="XyW-k6-rf2"/>
+                    </constraints>
                 </view>
-                <view alpha="0.5" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exV-qP-MhW" userLabel="Overlay">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
+                <view alpha="0.25" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exV-qP-MhW" userLabel="Overlay">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="250" id="aX4-sN-15N"/>
@@ -75,19 +78,18 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="bNT-3p-fot" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0qa-XE-o0N"/>
                 <constraint firstItem="bNT-3p-fot" firstAttribute="top" secondItem="exV-qP-MhW" secondAttribute="top" id="3HG-Od-Bs6"/>
                 <constraint firstItem="CrK-Nf-XL7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4dj-jO-asv"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="imf-H3-Khd" secondAttribute="trailing" constant="10" id="ElW-FE-fiy"/>
-                <constraint firstItem="bNT-3p-fot" firstAttribute="leading" secondItem="exV-qP-MhW" secondAttribute="leading" id="HlE-jO-h2j"/>
                 <constraint firstItem="2P3-zQ-Efw" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ltu-zg-C5H"/>
                 <constraint firstItem="exV-qP-MhW" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="MZJ-XK-dFB"/>
+                <constraint firstAttribute="trailing" secondItem="bNT-3p-fot" secondAttribute="trailing" id="MwN-ok-Xb1"/>
                 <constraint firstItem="exV-qP-MhW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="NLw-vn-Qj0"/>
                 <constraint firstItem="wIG-dD-hKq" firstAttribute="top" secondItem="2P3-zQ-Efw" secondAttribute="bottom" constant="8" id="ONi-pS-kHm"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wIG-dD-hKq" secondAttribute="trailing" constant="10" id="RFM-Iy-2lb"/>
-                <constraint firstItem="bNT-3p-fot" firstAttribute="height" secondItem="exV-qP-MhW" secondAttribute="height" id="Ube-oX-nSp"/>
                 <constraint firstItem="wIG-dD-hKq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="Z4d-Ni-fyu"/>
                 <constraint firstItem="CrK-Nf-XL7" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="cXr-ZO-6Q3"/>
-                <constraint firstItem="bNT-3p-fot" firstAttribute="trailing" secondItem="exV-qP-MhW" secondAttribute="trailing" id="gKj-vM-HA2"/>
                 <constraint firstItem="imf-H3-Khd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="jk6-Kr-I1y"/>
                 <constraint firstItem="exV-qP-MhW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="jnT-o6-okR"/>
                 <constraint firstItem="CrK-Nf-XL7" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="khd-1w-oBj"/>
@@ -95,8 +97,9 @@
                 <constraint firstItem="2P3-zQ-Efw" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="15" id="llS-fI-ThA"/>
                 <constraint firstItem="imf-H3-Khd" firstAttribute="top" secondItem="wIG-dD-hKq" secondAttribute="bottom" constant="10" id="mVg-UM-Hr4"/>
             </constraints>
+            <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="23.5" y="50.5"/>
+            <point key="canvasLocation" x="23" y="50"/>
         </view>
     </objects>
 </document>
