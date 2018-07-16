@@ -35,6 +35,7 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
         
         backImageDisplayScreenlet.delegate = self
         backImageDisplayScreenlet.classPK = 72458
+        backImageDisplayScreenlet.imageMode = .scaleAspectFill
 		backImageDisplayScreenlet.className = "com.liferay.document.library.kernel.model.DLFileEntry"
     }
     
@@ -61,7 +62,9 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesResponse imageEntries: [ImageEntry]) {
 //        self.showAlert(title: "Web content received")
-        
+//        for image in imageEntries {
+//            print(image.attributes["userId"]!)
+//        }
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {

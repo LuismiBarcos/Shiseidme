@@ -10,27 +10,27 @@ import UIKit
 import LiferayScreens
 import iOSPhotoEditor
 
-class FakeViewController: ImageUploadDetailViewController_default {
-    
-    override func startUploadClick() {
-        self.imageUploadDetailview?.startUpload()
-        dismiss(animated: true)
-    }
+class FakeViewController: UIViewController {
+
 }
 
-class MainViewController: UITabBarController, UITabBarControllerDelegate {
+class MainViewController:
+    UITabBarController,
+    UITabBarControllerDelegate,
+    ImageGalleryScreenletDelegate {
 
     let emptyGalleryScreenlet = ImageGalleryScreenlet(frame: .zero, themeName: "shiseidme")
     
 	override func viewDidLoad() {
 		super.viewDidLoad()
-
+        
 		tabBar.tintColor = .black
         delegate = self
 
         emptyGalleryScreenlet.presentingViewController = self
         emptyGalleryScreenlet.folderId = 72155
         emptyGalleryScreenlet.repositoryId = 20143
+        emptyGalleryScreenlet.delegate = self
         
         
 		let feedVC = FeedViewController()
@@ -42,9 +42,7 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 		feedTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
 		feedVC.tabBarItem = feedTabBarItem
         
-    
-        let imageUploadDetailview = ImageUploadDetailViewBase()
-        let cameraVC = FakeViewController(imageUploadDetailview: imageUploadDetailview)
+        let cameraVC = FakeViewController()
         let cameraTabBarItem = UITabBarItem(title: nil, image: UIImage(named: "plus-button"), selectedImage: UIImage(named: "plus-button"))
         cameraTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
         cameraVC.tabBarItem = cameraTabBarItem
@@ -81,6 +79,23 @@ class MainViewController: UITabBarController, UITabBarControllerDelegate {
 		imageView.image = image
 		navigationItem.titleView = imageView
 	}
+    
+    // MARK: ImageGalleryScreenletDelegate methods
+    func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploaded image: ImageEntry) {
+        let a = CommentAddInteractor.init(
+            className: "com.liferay.document.library.kernel.model.DLFileEntry",
+            classPK: image.imageEntryId,
+            body: image.description)
+        _ = a.start()
+
+        a.onSuccess = {
+            print("añadido")
+        }
+
+        a.onFailure = { error in
+            print("Fallo al añadir el comentatio \(error)")
+        }
+    }
     
     // MARK
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {

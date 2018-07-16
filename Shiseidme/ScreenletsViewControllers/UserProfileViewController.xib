@@ -24,15 +24,14 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view alpha="0.45000000000000001" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-3p-fot" customClass="ImageDisplayScreenlet">
+                <view alpha="0.45000000000000001" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNT-3p-fot" customClass="ImageDisplayScreenlet">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                     <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="500" id="L30-2p-aPM"/>
                         <constraint firstAttribute="height" constant="250" id="XyW-k6-rf2"/>
                     </constraints>
                 </view>
-                <view alpha="0.25" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="exV-qP-MhW" userLabel="Overlay">
+                <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exV-qP-MhW" userLabel="Overlay">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="250"/>
                     <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     <constraints>

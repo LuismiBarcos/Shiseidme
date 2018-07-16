@@ -23,6 +23,9 @@ class ImageGalleryView_shiseidme_profile: ImageGalleryView_default {
 		set {}
 	}
     
+    var allImages = [String:[ImageEntry]]()
+    var userImages = [String:[ImageEntry]]()
+    
     override func doCreateLayout() -> UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
         
@@ -36,4 +39,16 @@ class ImageGalleryView_shiseidme_profile: ImageGalleryView_default {
         return layout
     }
 
+    private func isPhotoOfUser(_ image: ImageEntry) -> Bool {
+        let imageUserId = (image.attributes["userId"]! as! NSString).integerValue
+        let userId = SessionContext.currentContext!.user.userId
+        return imageUserId == userId
+    }
+    
+    override func setRows(_ allRows: [String : [AnyObject?]], newRows: [String : [AnyObject]], rowCount: Int, sections: [String]) {
+        let defaultSection = allRows[BaseListView.DefaultSection] as! [ImageEntry?]
+        let userImageEntries = defaultSection.compactMap{ $0 }.filter(isPhotoOfUser)
+        let userImageRows = [BaseListView.DefaultSection:userImageEntries]
+        super.setRows(userImageRows, newRows: userImageRows, rowCount: userImageEntries.count, sections: sections)
+    }
 }
