@@ -27,7 +27,7 @@ class FeedViewController: XibViewController, ImageGalleryScreenletDelegate {
 	}
 
 	override func viewDidAppear(_ animated: Bool) {
-//		self.showLogin()
+
 	}
 
 	private func showLogin(){
@@ -37,7 +37,7 @@ class FeedViewController: XibViewController, ImageGalleryScreenletDelegate {
 	}
 
 	func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesResponse imageEntries: [ImageEntry]) {
-		//        self.showAlert(title: "Web content received")
+
 	}
 
 	func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {

@@ -4,13 +4,12 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserView" customModule="Shiseidme" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserView" customModule="LiferayPhotos" customModuleProvider="target">
             <connections>
                 <outlet property="userPortraitScreenlet" destination="cgS-2x-a1n" id="aOK-yQ-FoS"/>
                 <outlet property="usernameLabel" destination="aIc-l4-L89" id="2MD-dO-ufD"/>
@@ -29,7 +28,7 @@
                         <constraint firstAttribute="height" constant="38" id="ilZ-DL-oAU"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="offlinePolicy" value="cache-first"/>
                     </userDefinedRuntimeAttributes>
                 </view>

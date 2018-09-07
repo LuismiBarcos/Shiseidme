@@ -15,7 +15,7 @@
 import UIKit
 import LiferayScreens
 
-class ImageGalleryView_shiseidme_feed: ImageGalleryView_default {
+class ImageGalleryView_liferayphotos_feed: ImageGalleryView_default {
     
     let numberOfColumns = 1
 	let cellId = "feedCell"

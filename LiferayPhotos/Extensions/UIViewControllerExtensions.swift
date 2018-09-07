@@ -27,7 +27,6 @@ extension UIViewController {
     func startScreen<T>(screenId: String, T: T.Type){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyBoard.instantiateViewController(withIdentifier: screenId) as! T
-        //        self.present(viewController as! UIViewController, animated: true, completion: nil)
         self.navigationController?.pushViewController(viewController as! UIViewController, animated: true)
     }
 }

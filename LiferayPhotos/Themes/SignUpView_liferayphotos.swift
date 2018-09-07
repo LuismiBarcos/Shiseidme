@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class SignUpView_shiseidme: SignUpView_default, UITextFieldDelegate {
+class SignUpView_liferayphotos: SignUpView_default, UITextFieldDelegate {
     
     let blueColor = UIColor(red: 21/255, green: 126/255, blue: 251/255, alpha: 1)
     

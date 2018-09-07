@@ -28,7 +28,7 @@
                     <rect key="frame" x="16" y="256" width="343" height="341"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos"/>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfp-iY-waG" customClass="CommentAddScreenlet">
@@ -38,7 +38,7 @@
                         <constraint firstAttribute="height" constant="62" id="p7U-FT-El7"/>
                     </constraints>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos"/>
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5GY-1f-bfc" customClass="ImageDisplayScreenlet">

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_ShiseidmeVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_ShiseidmeVersionString[];
+FOUNDATION_EXPORT double Pods_LiferayPhotosVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LiferayPhotosVersionString[];
 

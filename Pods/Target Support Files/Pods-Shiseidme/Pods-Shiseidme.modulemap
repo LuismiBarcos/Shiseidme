@@ -1,6 +1,0 @@
-framework module Pods_Shiseidme {
-  umbrella header "Pods-Shiseidme-umbrella.h"
-
-  export *
-  module * { export * }
-}

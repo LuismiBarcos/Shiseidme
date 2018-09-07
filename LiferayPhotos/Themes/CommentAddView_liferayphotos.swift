@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class CommentAddView_shiseidme: CommentAddView_default {
+class CommentAddView_liferayphotos: CommentAddView_default {
     
     
     @IBOutlet weak var userPortraitScreenlet: UserPortraitScreenlet!

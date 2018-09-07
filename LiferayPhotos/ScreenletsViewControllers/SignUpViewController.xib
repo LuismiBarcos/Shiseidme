@@ -25,7 +25,7 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos"/>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>

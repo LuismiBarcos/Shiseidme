@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class CommentDisplayView_shiseidme: CommentDisplayView_default {
+class CommentDisplayView_liferayphotos: CommentDisplayView_default {
     
     override func onShow() {
         super.onShow()

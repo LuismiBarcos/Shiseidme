@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class ImageUploadDetailView_shiseidme: ImageUploadDetailView_default {
+class ImageUploadDetailView_liferayphotos: ImageUploadDetailView_default {
     
     override var righButton: UIBarButtonItem? {
         didSet{

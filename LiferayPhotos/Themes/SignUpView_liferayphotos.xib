@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignUpView_shiseidme" customModule="Shiseidme" customModuleProvider="target">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SignUpView_liferayphotos" customModule="Shiseidme" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -141,7 +141,7 @@
                                 <constraint firstAttribute="width" constant="128" id="pnp-XB-kiU"/>
                             </constraints>
                             <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos"/>
                             </userDefinedRuntimeAttributes>
                         </view>
                     </subviews>

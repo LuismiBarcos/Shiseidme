@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class UserPortraitView_shiseidme: UserPortraitView_default {
+class UserPortraitView_liferayphotos: UserPortraitView_default {
     
     override func onShow() {
         super.onShow()

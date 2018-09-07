@@ -14,7 +14,7 @@
 import UIKit
 import LiferayScreens
 
-class ImageGalleryView_shiseidme_profile: ImageGalleryView_default {
+class ImageGalleryView_liferayphotos_profile: ImageGalleryView_default {
 
 	override var columnNumber: Int {
 		get {

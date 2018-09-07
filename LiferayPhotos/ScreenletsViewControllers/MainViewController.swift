@@ -25,7 +25,7 @@ class MainViewController:
     UITabBarControllerDelegate,
     ImageGalleryScreenletDelegate {
 
-    let emptyGalleryScreenlet = ImageGalleryScreenlet(frame: .zero, themeName: "shiseidme")
+    let emptyGalleryScreenlet = ImageGalleryScreenlet(frame: .zero, themeName: "liferayphotos")
     
 	override func viewDidLoad() {
 		super.viewDidLoad()

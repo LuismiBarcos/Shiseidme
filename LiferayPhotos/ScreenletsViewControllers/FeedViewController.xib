@@ -24,7 +24,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme_feed"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos_feed"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="offlinePolicy" value="cache-first"/>
                     </userDefinedRuntimeAttributes>
                 </view>

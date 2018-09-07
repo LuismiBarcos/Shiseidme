@@ -14,7 +14,7 @@
 
 import LiferayScreens
 
-class RatingView_shiseidme: BaseScreenletView, RatingViewModel {
+class RatingView_liferayphotos: BaseScreenletView, RatingViewModel {
 
 	@IBOutlet weak var likeImage: UIImageView?
 	@IBOutlet weak var likesLabel: UILabel?

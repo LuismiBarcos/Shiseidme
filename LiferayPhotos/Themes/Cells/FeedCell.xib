@@ -50,7 +50,7 @@
                             <constraint firstAttribute="height" constant="28" id="ZyK-Tj-85h"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="shiseidme"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="themeName" value="liferayphotos"/>
                         </userDefinedRuntimeAttributes>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xv4-dA-Nqo">

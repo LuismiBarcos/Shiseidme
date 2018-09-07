@@ -48,33 +48,30 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     // MARK: UserPortraitScreenletDelegate methods
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitResponseImage image: UIImage) -> UIImage {
-//        self.showAlert(title: "Image received")
+
         return image
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitError error: NSError) {
-//        self.showAlert(title: "Error")
+
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploaded attributes: [String: AnyObject]) {
-//        self.showAlert(title: "Image uploaded")
+
     }
     
     func screenlet(_ screenlet: UserPortraitScreenlet, onUserPortraitUploadError error: NSError) {
-//        self.showAlert(title: "Error in upload")
+
     }
     
     // MARK: ImageGalleryScreenletDelegate methods
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesResponse imageEntries: [ImageEntry]) {
-//        self.showAlert(title: "Web content received")
-//        for image in imageEntries {
-//            print(image.attributes["userId"]!)
-//        }
+
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntriesError error: NSError) {
-//        self.showAlert(title: "Error")
+
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntrySelected imageEntry: ImageEntry) {
@@ -83,11 +80,11 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleted imageEntry: ImageEntry) {
-//        self.showAlert(title: "Image deleted")
+
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageEntryDeleteError error: NSError) {
-//        self.showAlert(title: "Error deleting image")
+
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadStart imageEntryUpload: ImageEntryUpload) {
@@ -102,11 +99,11 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadError error: NSError) {
-//        self.showAlert(title: "An error occurs in the upload process")
+
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploaded image: ImageEntry) {
-//        self.showAlert(title: "Image upload finished")
+
     }
     
     func screenlet(_ screenlet: ImageGalleryScreenlet, onImageUploadDetailViewCreated view: ImageUploadDetailViewBase) -> Bool {
@@ -116,10 +113,10 @@ class UserProfileViewController: XibViewController, UserPortraitScreenletDelegat
     
     // MARK: ImageDisplayScreenletDelegate methods
     func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetResponse url: URL) {
-//        self.showAlert(title: "File received")
+
     }
     
     func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetError error: NSError) {
-//        self.showAlert(title: "Error")
+
     }
 }

@@ -15,7 +15,7 @@
 import Foundation
 import LiferayScreens
 
-class LoginView_shiseidme: LoginView_default, UITextFieldDelegate {
+class LoginView_liferayphotos: LoginView_default, UITextFieldDelegate {
     
     let blueColor = UIColor(red: 21/255, green: 126/255, blue: 251/255, alpha: 1)
     

@@ -90,21 +90,21 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
     // MARK: FileDisplayScreenletDelegate methods
     
     func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetResponse url: URL) {
-//        self.showAlert(title: "File received")
+
     }
     
     func screenlet(_ screenlet: FileDisplayScreenlet, onFileAssetError error: NSError) {
-//        self.showAlert(title: "Error")
+
     }
     
     // MARK: CommentListScreenletDelegate methods
     
     func screenlet(_ screenlet: CommentListScreenlet, onListResponseComments comments: [Comment]) {
-//        self.showAlert(title: "Comments received")
+
     }
     
     func screenlet(_ screenlet: CommentListScreenlet, onCommentListError error: NSError) {
-//        self.showAlert(title: "Error")
+
     }
     
     func screenlet(_ screenlet: CommentListScreenlet, onSelectedComment comment: Comment) {
@@ -112,7 +112,7 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
     }
     
     func screenlet(_ screenlet: CommentListScreenlet, onDeletedComment comment: Comment) {
-//        self.showAlert(title: "Comment deleted")
+
     }
     
     func screenlet(_ screenlet: CommentListScreenlet, onCommentDelete comment: Comment, onError error: NSError) {
@@ -131,13 +131,12 @@ class DetailViewController: XibViewController, FileDisplayScreenletDelegate, Com
     
     func screenlet(_ screenlet: CommentAddScreenlet, onCommentAdded comment: Comment) {
 
-    
         commentListScreenlet.viewModel?.addComment(comment)
-//        commentListScreenlet.loadList()
+
     }
     
     func screenlet(_ screenlet: CommentAddScreenlet, onAddCommentError error: NSError) {
-//        self.showAlert(title: "Error")
+
     }
     
     func screenlet(_ screenlet: CommentAddScreenlet, onCommentUpdated comment: Comment) {

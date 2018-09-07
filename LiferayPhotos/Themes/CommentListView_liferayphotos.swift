@@ -15,9 +15,9 @@
 import Foundation
 import LiferayScreens
 
-class CommentListView_shiseidme: CommentListView_default {
+class CommentListView_liferayphotos: CommentListView_default {
     
-    let cellId = "CommentTableViewCell_shiseidme"
+    let cellId = "CommentTableViewCell_liferayphotos"
     
     override func doGetCellId(row: Int, object: AnyObject?) -> String {
         return cellId
@@ -31,7 +31,7 @@ class CommentListView_shiseidme: CommentListView_default {
     override func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath)
         -> CGFloat {
             let comment = rows[BaseListView.DefaultSection]?[indexPath.row] as? Comment
-            return CommentDisplayView_shiseidme.heightForText(comment?.htmlBody,
+            return CommentDisplayView_liferayphotos.heightForText(comment?.htmlBody,
                                                             width: tableView.frame.width)
     }
 
