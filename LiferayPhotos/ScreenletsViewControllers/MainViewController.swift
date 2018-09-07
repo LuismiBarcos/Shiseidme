@@ -81,7 +81,7 @@ class MainViewController:
 		let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))
 		imageView.contentMode = .scaleAspectFit
 		imageView.clipsToBounds = true
-		let image = UIImage(named: "logo.gif")
+		let image = UIImage(named: "logo.png")
 		imageView.image = image
 		navigationItem.titleView = imageView
 	}
