@@ -86,12 +86,11 @@
 		A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView_shiseidme.swift; sourceTree = "<group>"; };
 		A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAddView_shiseidme.xib; sourceTree = "<group>"; };
 		A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAddView_shiseidme.swift; sourceTree = "<group>"; };
-		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A647DDB520E541DB00B36511 /* LiferayPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A647DDC220E541DD00B36511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A647DDC420E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPortraitView_shiseidme.swift; sourceTree = "<group>"; };
 		A68AF5EB20F77F780064DF75 /* MainViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -99,7 +98,6 @@
 		A68D6F8520E54B3F005D2C79 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		A68D6F8820E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme_feed.xib; sourceTree = "<group>"; };
 		A68D6F8A20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme_feed.swift; sourceTree = "<group>"; };
-		A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPortraitView_shiseidme.xib; sourceTree = "<group>"; };
 		A6A5CD8820ECFE8D00119966 /* CommentDisplayView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDisplayView_shiseidme.swift; sourceTree = "<group>"; };
 		A6A5CD8A20EF575400119966 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		A6A5CD9020EF68BB00119966 /* plus-button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "plus-button.png"; sourceTree = "<group>"; };
@@ -135,7 +133,6 @@
 		D66C6BE320EBAE5000544BCD /* profile_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile_disabled.png; sourceTree = "<group>"; };
 		D66C6BEC20EBD7C400544BCD /* logo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = logo.gif; sourceTree = "<group>"; };
 		D680440820ECCF4E00B64BE0 /* chat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chat.png; sourceTree = "<group>"; };
-		D680440A20ECD74B00B64BE0 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		D680440F20ECDA5F00B64BE0 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		D680441020ECDA5F00B64BE0 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		D680443520ECDA9E00B64BE0 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
@@ -181,23 +178,22 @@
 		A647DDAC20E541DB00B36511 = {
 			isa = PBXGroup;
 			children = (
-				A647DDB720E541DB00B36511 /* Shiseidme */,
+				A647DDB720E541DB00B36511 /* LiferayPhotos */,
 				A647DDB620E541DB00B36511 /* Products */,
 				801DB5D70DF575083AA0F7D9 /* Pods */,
 				95ED39666A8682BC45385E4A /* Frameworks */,
-				D66C6BC920EB854300544BCD /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
 		A647DDB620E541DB00B36511 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A647DDB520E541DB00B36511 /* Shiseidme.app */,
+				A647DDB520E541DB00B36511 /* LiferayPhotos.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A647DDB720E541DB00B36511 /* Shiseidme */ = {
+		A647DDB720E541DB00B36511 /* LiferayPhotos */ = {
 			isa = PBXGroup;
 			children = (
 				D680440E20ECDA4F00B64BE0 /* Models */,
@@ -214,7 +210,7 @@
 				A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */,
 				D60306E020EA01E6005262B0 /* XibViewController.swift */,
 			);
-			path = Shiseidme;
+			path = LiferayPhotos;
 			sourceTree = "<group>";
 		};
 		A68D6F7720E544E2005D2C79 /* ScreenletsViewControllers */ = {
@@ -286,16 +282,6 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
-		D66C6BC920EB854300544BCD /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */,
-				A6A5A4D820EA683F0069B010 /* UserPortraitView_shiseidme.xib */,
-				D680440A20ECD74B00B64BE0 /* ChatViewController.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		D680440E20ECDA4F00B64BE0 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,9 +324,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A647DDB420E541DB00B36511 /* Shiseidme */ = {
+		A647DDB420E541DB00B36511 /* LiferayPhotos */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A647DDDD20E541DD00B36511 /* Build configuration list for PBXNativeTarget "Shiseidme" */;
+			buildConfigurationList = A647DDDD20E541DD00B36511 /* Build configuration list for PBXNativeTarget "LiferayPhotos" */;
 			buildPhases = (
 				9C2DDAB8EB57E7465ADD1182 /* [CP] Check Pods Manifest.lock */,
 				A647DDB120E541DB00B36511 /* Sources */,
@@ -352,9 +338,9 @@
 			);
 			dependencies = (
 			);
-			name = Shiseidme;
+			name = LiferayPhotos;
 			productName = Shiseidme;
-			productReference = A647DDB520E541DB00B36511 /* Shiseidme.app */;
+			productReference = A647DDB520E541DB00B36511 /* LiferayPhotos.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -372,7 +358,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A647DDB020E541DB00B36511 /* Build configuration list for PBXProject "Shiseidme" */;
+			buildConfigurationList = A647DDB020E541DB00B36511 /* Build configuration list for PBXProject "LiferayPhotos" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -385,7 +371,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A647DDB420E541DB00B36511 /* Shiseidme */,
+				A647DDB420E541DB00B36511 /* LiferayPhotos */,
 			);
 		};
 /* End PBXProject section */
@@ -690,13 +676,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CY8Z78944;
-				INFOPLIST_FILE = Shiseidme/Info.plist;
+				INFOPLIST_FILE = LiferayPhotos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.Shiseidme00000;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.LiferayPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,13 +696,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3CY8Z78944;
-				INFOPLIST_FILE = Shiseidme/Info.plist;
+				INFOPLIST_FILE = LiferayPhotos/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.Shiseidme00000;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liferay.LiferayPhotos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -726,7 +712,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A647DDB020E541DB00B36511 /* Build configuration list for PBXProject "Shiseidme" */ = {
+		A647DDB020E541DB00B36511 /* Build configuration list for PBXProject "LiferayPhotos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A647DDDB20E541DD00B36511 /* Debug */,
@@ -735,7 +721,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A647DDDD20E541DD00B36511 /* Build configuration list for PBXNativeTarget "Shiseidme" */ = {
+		A647DDDD20E541DD00B36511 /* Build configuration list for PBXNativeTarget "LiferayPhotos" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A647DDDE20E541DD00B36511 /* Debug */,
