@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1F6E8B0EAD5D1BAEB6792669 /* Pods_LiferayPhotos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8978D05CB9A630D5E56399 /* Pods_LiferayPhotos.framework */; };
-		851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */; };
 		A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */; };
 		A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */; };
 		A6360F2D20EBD2A300914ED9 /* CommentDisplayView_liferayphotos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F2C20EBD2A200914ED9 /* CommentDisplayView_liferayphotos.xib */; };
@@ -155,7 +154,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */,
 				1F6E8B0EAD5D1BAEB6792669 /* Pods_LiferayPhotos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
