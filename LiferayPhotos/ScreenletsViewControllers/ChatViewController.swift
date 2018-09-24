@@ -39,17 +39,17 @@ class ChatViewController: SLKTextViewController {
 
 		title = "Chat"
 
-		WeDeploy.data(whatsappDataUrl)
-			.orderBy(field: "id", order: .ASC)
-			.limit(150)
-			.get(resourcePath: "messages")
-			.then { [weak self] messages -> Void in
-				self?.messages = messages.map({ Message(json: $0) }).reversed()
-				self?.tableView.reloadData()
-			}
-			.catch { error in
-				print(error)
-		}
+//        WeDeploy.data(whatsappDataUrl)
+//            .orderBy(field: "id", order: .ASC)
+//            .limit(150)
+//            .get(resourcePath: "messages")
+//            .then { [weak self] messages -> Void in
+//                self?.messages = messages.map({ Message(json: $0) }).reversed()
+//                self?.tableView.reloadData()
+//            }
+//            .catch { error in
+//                print(error)
+//        }
 
 		socket = WeDeploy.data(whatsappDataUrl)
 			.orderBy(field: "id", order: .DESC)

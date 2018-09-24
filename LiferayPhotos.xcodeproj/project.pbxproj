@@ -16,6 +16,8 @@
 		A6360F3520EBD6ED00914ED9 /* CommentListView_liferayphotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3420EBD6ED00914ED9 /* CommentListView_liferayphotos.swift */; };
 		A6360F3720EBE1DB00914ED9 /* CommentAddView_liferayphotos.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3620EBE1DA00914ED9 /* CommentAddView_liferayphotos.xib */; };
 		A6360F3920EBE41000914ED9 /* CommentAddView_liferayphotos.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3820EBE41000914ED9 /* CommentAddView_liferayphotos.swift */; };
+		A642D45C2147D58200513E62 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A642D45A2147D58200513E62 /* logo.png */; };
+		A642D45D2147D58200513E62 /* logo-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = A642D45B2147D58200513E62 /* logo-xl.png */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
@@ -70,8 +72,6 @@
 		D693891420EA389E003EC7ED /* RatingView_liferayphotos.xib in Resources */ = {isa = PBXBuildFile; fileRef = D693891320EA389E003EC7ED /* RatingView_liferayphotos.xib */; };
 		D693891620EA3949003EC7ED /* like_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891520EA3949003EC7ED /* like_enabled.png */; };
 		D693891820EA3A02003EC7ED /* like_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = D693891720EA3A02003EC7ED /* like_disabled.png */; };
-		D69AFC6A21429AB10014ED1C /* logo-xl.png in Resources */ = {isa = PBXBuildFile; fileRef = D69AFC6921429AB10014ED1C /* logo-xl.png */; };
-		D69AFC7421429CE60014ED1C /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D69AFC7321429CE60014ED1C /* logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +88,8 @@
 		A6360F3420EBD6ED00914ED9 /* CommentListView_liferayphotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView_liferayphotos.swift; sourceTree = "<group>"; };
 		A6360F3620EBE1DA00914ED9 /* CommentAddView_liferayphotos.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAddView_liferayphotos.xib; sourceTree = "<group>"; };
 		A6360F3820EBE41000914ED9 /* CommentAddView_liferayphotos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAddView_liferayphotos.swift; sourceTree = "<group>"; };
+		A642D45A2147D58200513E62 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A642D45B2147D58200513E62 /* logo-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-xl.png"; sourceTree = "<group>"; };
 		A647DDB520E541DB00B36511 /* LiferayPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiferayPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -145,8 +147,6 @@
 		D693891320EA389E003EC7ED /* RatingView_liferayphotos.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RatingView_liferayphotos.xib; sourceTree = "<group>"; };
 		D693891520EA3949003EC7ED /* like_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_enabled.png; sourceTree = "<group>"; };
 		D693891720EA3A02003EC7ED /* like_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = like_disabled.png; sourceTree = "<group>"; };
-		D69AFC6921429AB10014ED1C /* logo-xl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-xl.png"; path = "../../../../../../Downloads/logo-xl.png"; sourceTree = "<group>"; };
-		D69AFC7321429CE60014ED1C /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = logo.png; path = ../../../../../../Desktop/logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -321,8 +321,8 @@
 				D693891720EA3A02003EC7ED /* like_disabled.png */,
 				D66C3BFB20EA6AEE00BF83A0 /* comments.png */,
 				A6A5CD9020EF68BB00119966 /* plus-button.png */,
-				D69AFC6921429AB10014ED1C /* logo-xl.png */,
-				D69AFC7321429CE60014ED1C /* logo.png */,
+				A642D45B2147D58200513E62 /* logo-xl.png */,
+				A642D45A2147D58200513E62 /* logo.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -399,15 +399,16 @@
 				D66C6BE120EBAD7E00544BCD /* feed_enabled.png in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_liferayphotos.xib in Resources */,
 				A6360F3320EBD6D500914ED9 /* CommentListView_liferayphotos.xib in Resources */,
-				D69AFC7421429CE60014ED1C /* logo.png in Resources */,
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
 				A6A5CD8E20EF589E00119966 /* profile_enabled.png in Resources */,
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
+				A642D45D2147D58200513E62 /* logo-xl.png in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
 				A6A5CD9320EF8A0300119966 /* ImageUploadDetailView_liferayphotos.xib in Resources */,
 				A6A5CD9120EF68BB00119966 /* plus-button.png in Resources */,
 				D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */,
+				A642D45C2147D58200513E62 /* logo.png in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
 				A6A5CD9F20F49EB900119966 /* SignUpViewController.xib in Resources */,
 				D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */,
@@ -420,7 +421,6 @@
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_liferayphotos_feed.xib in Resources */,
 				A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_liferayphotos.xib in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
-				D69AFC6A21429AB10014ED1C /* logo-xl.png in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
 				D66C6BCC20EB8E4800544BCD /* ImageGalleryView_liferayphotos_profile.xib in Resources */,
 				D66C6BE020EBAD7E00544BCD /* feed_disabled.png in Resources */,
