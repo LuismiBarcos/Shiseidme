@@ -47,7 +47,7 @@ class ImageGalleryView_shiseidme_profile: ImageGalleryView_default {
     
     override func setRows(_ allRows: [String : [AnyObject?]], newRows: [String : [AnyObject]], rowCount: Int, sections: [String]) {
         let defaultSection = allRows[BaseListView.DefaultSection] as! [ImageEntry?]
-        let userImageEntries = defaultSection.compactMap{ $0 }.filter(isPhotoOfUser)
+        let userImageEntries = defaultSection.compactMap{ $0 }.filter(isPhotoOfUser).sorted { $0.attributes["createDate"]!.int64Value > $1.attributes["createDate"]!.int64Value }
         let userImageRows = [BaseListView.DefaultSection:userImageEntries]
         super.setRows(userImageRows, newRows: userImageRows, rowCount: userImageEntries.count, sections: sections)
     }
