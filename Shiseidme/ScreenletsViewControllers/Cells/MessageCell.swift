@@ -63,6 +63,8 @@ class MessageCell: UITableViewCell {
 	@IBOutlet weak var messageView: UIView! {
 		didSet {
 			messageView.layer.cornerRadius = 10
+            messageView.layer.borderWidth = 0.3
+            messageView.layer.borderColor = UIColor.black.cgColor
 			messageView.clipsToBounds = true
 		}
 	}
