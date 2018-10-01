@@ -12,7 +12,6 @@ import LiferayScreens
 class NewsCell: UICollectionViewCell {
     
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var overlay: UIView!
     @IBOutlet weak var newsDescription: UILabel!
     
     func render(imageEntry: ImageEntry) {
@@ -21,10 +20,8 @@ class NewsCell: UICollectionViewCell {
             placeholderImage: nil,
             optionsInfo: [.backgroundDecode])
         image.layer.masksToBounds = true
-        image.layer.cornerRadius = 30
-        
-        overlay.layer.cornerRadius = 30
-        overlay.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        image.layer.cornerRadius = 3
+//        image.contentMode = .scaleAspectFill
         
         newsDescription.text = imageEntry.description
     }

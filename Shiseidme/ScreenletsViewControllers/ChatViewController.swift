@@ -154,9 +154,9 @@ class ChatViewController: SLKTextViewController {
 		let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as! MessageCell
 
 		cell.message = message.content
-		cell.author = message.author.name
-		cell.authorColor = message.author.color
-		cell.date = message.time
+//        cell.author = message.author.name
+
+//        cell.date = message.time
 
 		cell.transform = tableView.transform
 

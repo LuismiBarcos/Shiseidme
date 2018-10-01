@@ -59,7 +59,7 @@ class ImageGalleryView_shiseidme_news: ImageGalleryView_default {
     override func doFillLoadedCell(indexPath: IndexPath, cell: UICollectionViewCell, object: AnyObject) {
         let imageEntry = object as! ImageEntry
         let cell = cell as! NewsCell
-        cell.layer.cornerRadius = 30
+        cell.layer.cornerRadius = 3
         cell.render(imageEntry: imageEntry)
     }
     

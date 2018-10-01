@@ -25,23 +25,23 @@ class MessageCell: UITableViewCell {
 		}
 	}
 
-	var author: String? {
-		didSet {
-			authorLabel.text = author
-		}
-	}
+//    var author: String? {
+//        didSet {
+//            authorLabel.text = author
+//        }
+//    }
 
-	var authorColor: Int? {
-		didSet {
-			authorLabel.textColor = UIColor.chatColors[authorColor ?? 0]
-		}
-	}
+//    var authorColor: Int? {
+//        didSet {
+//            authorLabel.textColor = UIColor.chatColors[authorColor ?? 0]
+//        }
+//    }
 
-	var date: String? {
-		didSet {
-			dateLabel.text = date
-		}
-	}
+//    var date: String? {
+//        didSet {
+//            dateLabel.text = date
+//        }
+//    }
 
 	var maxConstraint: CGFloat!
 
