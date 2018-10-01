@@ -16,12 +16,20 @@
 		A6360F3520EBD6ED00914ED9 /* CommentListView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */; };
 		A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */; };
 		A6360F3920EBE41000914ED9 /* CommentAddView_shiseidme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */; };
+		A63AB820216210830021699C /* ImageGalleryView_shiseidme_news.xib in Resources */ = {isa = PBXBuildFile; fileRef = A63AB81F216210830021699C /* ImageGalleryView_shiseidme_news.xib */; };
+		A63AB822216210A70021699C /* ImageGalleryView_shiseidme_news.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63AB821216210A70021699C /* ImageGalleryView_shiseidme_news.swift */; };
 		A63C9B15215E524000A9BB4E /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A63C9B13215E524000A9BB4E /* Icon-App-60x60@3x.png */; };
 		A63C9B16215E524000A9BB4E /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A63C9B14215E524000A9BB4E /* Icon-App-60x60@2x.png */; };
 		A63C9B1E215E5E6F00A9BB4E /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A63C9B1D215E5E6F00A9BB4E /* bg.jpg */; };
+		A64694FD216215E400889E42 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64694FB216215E400889E42 /* NewsViewController.swift */; };
+		A64694FE216215E400889E42 /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A64694FC216215E400889E42 /* NewsViewController.xib */; };
 		A647DDB920E541DB00B36511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A647DDB820E541DB00B36511 /* AppDelegate.swift */; };
 		A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A647DDBF20E541DD00B36511 /* Assets.xcassets */; };
 		A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A647DDC120E541DD00B36511 /* LaunchScreen.storyboard */; };
+		A67B58782162208E00F1B525 /* news_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A67B58762162208E00F1B525 /* news_disabled.png */; };
+		A67B58792162208E00F1B525 /* news_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A67B58772162208E00F1B525 /* news_enabled.png */; };
+		A67B587B2162217300F1B525 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A67B587A2162217300F1B525 /* NewsCell.xib */; };
+		A67B587D2162220100F1B525 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67B587C2162220100F1B525 /* NewsCell.swift */; };
 		A68AF5EC20F77F780064DF75 /* MainViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68AF5EB20F77F780064DF75 /* MainViewControllerExtensions.swift */; };
 		A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */ = {isa = PBXBuildFile; fileRef = A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */; };
 		A68D6F8220E547F4005D2C79 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */; };
@@ -88,15 +96,23 @@
 		A6360F3420EBD6ED00914ED9 /* CommentListView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentListView_shiseidme.swift; sourceTree = "<group>"; };
 		A6360F3620EBE1DA00914ED9 /* CommentAddView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentAddView_shiseidme.xib; sourceTree = "<group>"; };
 		A6360F3820EBE41000914ED9 /* CommentAddView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentAddView_shiseidme.swift; sourceTree = "<group>"; };
+		A63AB81F216210830021699C /* ImageGalleryView_shiseidme_news.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageGalleryView_shiseidme_news.xib; sourceTree = "<group>"; };
+		A63AB821216210A70021699C /* ImageGalleryView_shiseidme_news.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryView_shiseidme_news.swift; sourceTree = "<group>"; };
 		A63C9B13215E524000A9BB4E /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
 		A63C9B14215E524000A9BB4E /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
 		A63C9B1D215E5E6F00A9BB4E /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = ../../../bg.jpg; sourceTree = "<group>"; };
+		A64694FB216215E400889E42 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		A64694FC216215E400889E42 /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		A647DDB520E541DB00B36511 /* Shiseidme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shiseidme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A647DDB820E541DB00B36511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A647DDBF20E541DD00B36511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A647DDC220E541DD00B36511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A647DDC420E541DD00B36511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A64C596220EA34DD004EBB6A /* UserPortraitView_shiseidme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPortraitView_shiseidme.swift; sourceTree = "<group>"; };
+		A67B58762162208E00F1B525 /* news_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news_disabled.png; sourceTree = "<group>"; };
+		A67B58772162208E00F1B525 /* news_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = news_enabled.png; sourceTree = "<group>"; };
+		A67B587A2162217300F1B525 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		A67B587C2162220100F1B525 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		A68AF5EB20F77F780064DF75 /* MainViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerExtensions.swift; sourceTree = "<group>"; };
 		A68D6F7A20E54563005D2C79 /* liferay-server-context.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "liferay-server-context.plist"; sourceTree = "<group>"; };
 		A68D6F8120E547F4005D2C79 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
@@ -237,6 +253,8 @@
 				A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */,
 				A6A5CD9C20F49E9600119966 /* SignUpViewController.swift */,
 				A6A5CD9E20F49EB900119966 /* SignUpViewController.xib */,
+				A64694FB216215E400889E42 /* NewsViewController.swift */,
+				A64694FC216215E400889E42 /* NewsViewController.xib */,
 			);
 			path = ScreenletsViewControllers;
 			sourceTree = "<group>";
@@ -253,6 +271,8 @@
 		A68D6F8720E55122005D2C79 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				A63AB81F216210830021699C /* ImageGalleryView_shiseidme_news.xib */,
+				A63AB821216210A70021699C /* ImageGalleryView_shiseidme_news.swift */,
 				A6A5CD9620F3496C00119966 /* LoginView_shiseidme.xib */,
 				A6A5CD9820F3498D00119966 /* LoginView_shiseidme.swift */,
 				A6A5CDA020F4A9EA00119966 /* SignUpView_shiseidme.xib */,
@@ -286,6 +306,8 @@
 				D66C3BF520EA50CC00BF83A0 /* FeedCell.xib */,
 				D60306ED20EA295B005262B0 /* FeedCell.swift */,
 				A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */,
+				A67B587A2162217300F1B525 /* NewsCell.xib */,
+				A67B587C2162220100F1B525 /* NewsCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,6 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				A63C9B1D215E5E6F00A9BB4E /* bg.jpg */,
+				A67B58762162208E00F1B525 /* news_disabled.png */,
+				A67B58772162208E00F1B525 /* news_enabled.png */,
 				D680443D20ECDBAF00B64BE0 /* arrows.png */,
 				D680440820ECCF4E00B64BE0 /* chat.png */,
 				D66C6BDE20EBAD7E00544BCD /* feed_disabled.png */,
@@ -408,12 +432,15 @@
 				A6A5CDA120F4A9EC00119966 /* SignUpView_shiseidme.xib in Resources */,
 				A6A5CD9720F3496D00119966 /* LoginView_shiseidme.xib in Resources */,
 				A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */,
+				A63AB820216210830021699C /* ImageGalleryView_shiseidme_news.xib in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
 				D680440920ECCF4E00B64BE0 /* chat.png in Resources */,
 				D66C6BE120EBAD7E00544BCD /* feed_enabled.png in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
 				A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */,
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
+				A64694FE216215E400889E42 /* NewsViewController.xib in Resources */,
+				A67B58792162208E00F1B525 /* news_enabled.png in Resources */,
 				A6A5CD8E20EF589E00119966 /* profile_enabled.png in Resources */,
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				A63C9B16215E524000A9BB4E /* Icon-App-60x60@2x.png in Resources */,
@@ -424,6 +451,7 @@
 				A6A5CD9120EF68BB00119966 /* plus-button.png in Resources */,
 				D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */,
 				A6A5CD8F20EF58A900119966 /* logo.gif in Resources */,
+				A67B587B2162217300F1B525 /* NewsCell.xib in Resources */,
 				D60306DD20E9FF7E005262B0 /* LoginViewController.xib in Resources */,
 				A6A5CD9F20F49EB900119966 /* SignUpViewController.xib in Resources */,
 				D66C6BE520EBAE5000544BCD /* profile_disabled.png in Resources */,
@@ -435,6 +463,7 @@
 				D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */,
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
 				A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */,
+				A67B58782162208E00F1B525 /* news_disabled.png in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
 				D66C6BCC20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.xib in Resources */,
@@ -537,6 +566,7 @@
 				D66C6BCD20EB8E4800544BCD /* ImageGalleryView_shiseidme_profile.swift in Sources */,
 				A6A5CD8B20EF575400119966 /* ChatViewController.swift in Sources */,
 				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */,
+				A67B587D2162220100F1B525 /* NewsCell.swift in Sources */,
 				A6A5CD9D20F49E9600119966 /* SignUpViewController.swift in Sources */,
 				D680441220ECDA6000B64BE0 /* Colors.swift in Sources */,
 				D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */,
@@ -557,7 +587,9 @@
 				A6A5CDA320F4AA0B00119966 /* SignUpView_shiseidme.swift in Sources */,
 				A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */,
 				D60306EA20EA075E005262B0 /* UserProfileViewController.swift in Sources */,
+				A63AB822216210A70021699C /* ImageGalleryView_shiseidme_news.swift in Sources */,
 				D680441120ECDA6000B64BE0 /* Message.swift in Sources */,
+				A64694FD216215E400889E42 /* NewsViewController.swift in Sources */,
 				A68D6F8420E54829005D2C79 /* LoginViewController.swift in Sources */,
 				A6360F3920EBE41000914ED9 /* CommentAddView_shiseidme.swift in Sources */,
 			);
