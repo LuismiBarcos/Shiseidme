@@ -62,4 +62,11 @@ class ImageGalleryView_shiseidme_feed: ImageGalleryView_default {
 
 		cell.render(imageEntry: imageEntry)
 	}
+    
+    override func setRows(_ allRows: [String : [AnyObject?]], newRows: [String : [AnyObject]], rowCount: Int, sections: [String]) {
+        let defaultSection = allRows[BaseListView.DefaultSection] as! [ImageEntry?]
+        let userImageEntries = defaultSection.compactMap{ $0 }.sorted { $0.attributes["createDate"]!.int64Value > $1.attributes["createDate"]!.int64Value }
+        let userImageRows = [BaseListView.DefaultSection:userImageEntries]
+        super.setRows(userImageRows, newRows: userImageRows, rowCount: userImageEntries.count, sections: sections)
+    }
 }
