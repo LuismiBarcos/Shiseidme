@@ -22,9 +22,7 @@ class ImageGalleryView_shiseidme_news: ImageGalleryView_default {
     
     override func onCreated() {
         super.onCreated()
-        
         let grayColor = UIColor(red: 230/255.0, green: 230/255.0, blue: 230/255.0, alpha: 1)
-
         backgroundColor = grayColor
         collectionView?.backgroundColor = grayColor
     }
@@ -43,16 +41,12 @@ class ImageGalleryView_shiseidme_news: ImageGalleryView_default {
     override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         
         let width = collectionView.bounds.width
-        
         return CGSize(width: width - 20, height: 400)
     }
     
     override func doCreateLayout() -> UICollectionViewLayout {
         let layout = super.doCreateLayout() as! UICollectionViewFlowLayout
-        
-        layout.minimumLineSpacing = 10.0
-        
-        
+        layout.minimumLineSpacing = 7.0
         return layout
     }
     

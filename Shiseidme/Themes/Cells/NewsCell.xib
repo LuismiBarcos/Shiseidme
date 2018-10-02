@@ -18,9 +18,9 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3wB-Sg-1gv">
                     <rect key="frame" x="0.0" y="20" width="375" height="557"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Xc-2HD">
-                    <rect key="frame" x="14" y="603" width="345" height="27"/>
-                    <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="23"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQu-Xc-2HD">
+                    <rect key="frame" x="15" y="577" width="345" height="90"/>
+                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="20"/>
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
@@ -28,12 +28,12 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="3wB-Sg-1gv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Awu-c0-nzF"/>
-                <constraint firstItem="FQu-Xc-2HD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="CU4-wu-IYy"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FQu-Xc-2HD" secondAttribute="bottom" constant="37" id="Dgj-hw-tOI"/>
+                <constraint firstItem="FQu-Xc-2HD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="CU4-wu-IYy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="FQu-Xc-2HD" secondAttribute="bottom" id="Dgj-hw-tOI"/>
                 <constraint firstItem="3wB-Sg-1gv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="La5-ql-yEH"/>
                 <constraint firstItem="3wB-Sg-1gv" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-90" id="Wny-K7-om8"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FQu-Xc-2HD" secondAttribute="trailing" constant="16" id="dfL-Lx-Kzs"/>
-                <constraint firstItem="FQu-Xc-2HD" firstAttribute="top" secondItem="3wB-Sg-1gv" secondAttribute="bottom" constant="26" id="lGA-im-cYw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="FQu-Xc-2HD" secondAttribute="trailing" constant="15" id="dfL-Lx-Kzs"/>
+                <constraint firstItem="FQu-Xc-2HD" firstAttribute="top" secondItem="3wB-Sg-1gv" secondAttribute="bottom" id="lGA-im-cYw"/>
                 <constraint firstItem="3wB-Sg-1gv" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="pVd-KH-W2V"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>

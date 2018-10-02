@@ -21,7 +21,7 @@ class NewsCell: UICollectionViewCell {
             optionsInfo: [.backgroundDecode])
         image.layer.masksToBounds = true
         image.layer.cornerRadius = 3
-//        image.contentMode = .scaleAspectFill
+        image.contentMode = .scaleAspectFill
         
         newsDescription.text = imageEntry.description
     }
