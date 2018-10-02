@@ -33,50 +33,86 @@ class MainViewController:
         emptyGalleryScreenlet.delegate = self
         
         let newsVC = NewsViewController()
-        let newsTabBarItem = UITabBarItem(
-            title: nil,
-            image: UIImage(named: "news_disabled"),
-            selectedImage: UIImage(named: "news_enabled"))
-        newsTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-        newsVC.tabBarItem = newsTabBarItem
+        newsVC.tabBarItem = self.createTabBarItem(
+            tag: 1,
+            image: "news_disabled",
+            selectedImage: "news_enabled")
         
-		let feedVC = FeedViewController()
-		let feedTabBarItem = UITabBarItem(
-			title: nil,
-			image: UIImage(named: "feed_disabled"),
-			selectedImage: UIImage(named: "feed_enabled"))
-
-		feedTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-		feedVC.tabBarItem = feedTabBarItem
+		let feedVC = AdvertisementsViewController()
+		feedVC.tabBarItem = self.createTabBarItem(
+            tag: 2,
+            image: "advertisements_disabled",
+            selectedImage: "advertisements_enabled")
         
-        let cameraVC = FakeViewController()
-        let cameraTabBarItem = UITabBarItem(title: nil, image: UIImage(named: "plus-button"), selectedImage: UIImage(named: "plus-button"))
-        cameraTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-        cameraVC.tabBarItem = cameraTabBarItem
+        let cameraVC = FeedViewController()
+        cameraVC.tabBarItem = self.createTabBarItem(
+            tag: 3,
+            image: "social_disabled",
+            selectedImage: "social_disabled")
 
-		let userProfileVC = UserProfileViewController()
-
-		let profileTabBarItem = UITabBarItem(
-			title: nil,
-			image: UIImage(named: "profile_disabled"),
-			selectedImage: UIImage(named: "profile_enabled"))
-
-		profileTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
-
-		userProfileVC.tabBarItem = profileTabBarItem
+		let userProfileVC = ChatViewController()
+        userProfileVC.tabBarItem = self.createTabBarItem(
+            tag: 4,
+            image: "chat-disabled",
+            selectedImage: "chat-enabled")
 
 		viewControllers = [newsVC, feedVC, cameraVC ,userProfileVC]
-
-		let chatButton = UIBarButtonItem(image: UIImage(named: "chat"), style: .plain, target: self, action: #selector(goToChat))
-		navigationItem.rightBarButtonItem = chatButton
-
+        self.tabBar.barTintColor = UIColor.white
 		addLogo()
+        addRightBarButtonItems()
+        disableSocialButtons()
 	}
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        item.tag == 3 ? self.enableSocialButtons() : self.disableSocialButtons()
+    }
 
-	@objc func goToChat() {
-		let chatVC = ChatViewController()
-		self.navigationController?.pushViewController(chatVC, animated: true)
+	@objc func goToUserProfile() {
+		self.navigationController?.pushViewController(UserProfileViewController(), animated: true)
 	}
+    
+    @objc func uploadNewImage() {
+        self.showMediaSelectorAndPhotoEditor()
+    }
+    
+    private func addRightBarButtonItems() {
+        navigationItem.rightBarButtonItems = [
+            self.createBarButtonItem(imageName: "plus-button", selector: #selector(uploadNewImage)),
+            self.createBarButtonItem(imageName: "profile_enabled", selector: #selector(goToUserProfile))]
+    }
+    
+    private func createBarButtonItem(imageName: String, selector: Selector) -> UIBarButtonItem {
+        return UIBarButtonItem(
+            image: UIImage(named: imageName),
+            style: .plain,
+            target: self,
+            action: selector)
+        
+    }
+    
+    private func createTabBarItem(tag: Int, image: String, selectedImage: String) -> UITabBarItem{
+        let defaultTabBarItem = UITabBarItem(
+            title: nil,
+            image: UIImage(named: image),
+            selectedImage: UIImage(named: selectedImage))
+        defaultTabBarItem.imageInsets = UIEdgeInsets(top: 6, left: 0, bottom: -6, right: 0)
+        defaultTabBarItem.tag = tag
+        return defaultTabBarItem
+    }
+    
+    private func disableSocialButtons() {
+        navigationItem.rightBarButtonItems?.forEach({item in
+            item.isEnabled = false
+            item.tintColor = UIColor.clear
+        })
+    }
+    
+    private func enableSocialButtons() {
+        navigationItem.rightBarButtonItems?.forEach({item in
+            item.isEnabled = true
+            item.tintColor = UIColor.black
+        })
+    }
 
 	fileprivate func addLogo() {
 		let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 38, height: 38))

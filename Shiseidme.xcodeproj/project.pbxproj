@@ -10,6 +10,14 @@
 		851A6EED1E7174D8185DD01C /* Pods_Shiseidme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */; };
 		A6100B0A20EBBBC7005E5BA8 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */; };
 		A6100B0C20EBBBDE005E5BA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */; };
+		A6113C4021637ABD001C8DEC /* chat-disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A6113C3E21637ABB001C8DEC /* chat-disabled.png */; };
+		A6113C4121637ABD001C8DEC /* chat-enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A6113C3F21637ABD001C8DEC /* chat-enabled.png */; };
+		A6113C4421637C5D001C8DEC /* advertisements_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A6113C4221637C5D001C8DEC /* advertisements_disabled.png */; };
+		A6113C4521637C5D001C8DEC /* advertisements_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A6113C4321637C5D001C8DEC /* advertisements_enabled.png */; };
+		A6113C4821637D18001C8DEC /* social_disabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A6113C4621637D17001C8DEC /* social_disabled.png */; };
+		A6113C4921637D18001C8DEC /* social_enabled.png in Resources */ = {isa = PBXBuildFile; fileRef = A6113C4721637D17001C8DEC /* social_enabled.png */; };
+		A6113C4E2163A510001C8DEC /* AdvertisementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6113C4C2163A510001C8DEC /* AdvertisementsViewController.swift */; };
+		A6113C4F2163A510001C8DEC /* AdvertisementsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6113C4D2163A510001C8DEC /* AdvertisementsViewController.xib */; };
 		A6360F2D20EBD2A300914ED9 /* CommentDisplayView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */; };
 		A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */; };
 		A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */; };
@@ -90,6 +98,14 @@
 		A1398396F21CC8A2638E3E77 /* Pods_Shiseidme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Shiseidme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6100B0920EBBBC7005E5BA8 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		A6100B0B20EBBBDE005E5BA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A6113C3E21637ABB001C8DEC /* chat-disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-disabled.png"; sourceTree = "<group>"; };
+		A6113C3F21637ABD001C8DEC /* chat-enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chat-enabled.png"; sourceTree = "<group>"; };
+		A6113C4221637C5D001C8DEC /* advertisements_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = advertisements_disabled.png; sourceTree = "<group>"; };
+		A6113C4321637C5D001C8DEC /* advertisements_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = advertisements_enabled.png; sourceTree = "<group>"; };
+		A6113C4621637D17001C8DEC /* social_disabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social_disabled.png; sourceTree = "<group>"; };
+		A6113C4721637D17001C8DEC /* social_enabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = social_enabled.png; sourceTree = "<group>"; };
+		A6113C4C2163A510001C8DEC /* AdvertisementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisementsViewController.swift; sourceTree = "<group>"; };
+		A6113C4D2163A510001C8DEC /* AdvertisementsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdvertisementsViewController.xib; sourceTree = "<group>"; };
 		A6360F2C20EBD2A200914ED9 /* CommentDisplayView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentDisplayView_shiseidme.xib; sourceTree = "<group>"; };
 		A6360F3020EBD3FA00914ED9 /* CommentTableViewCell_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentTableViewCell_shiseidme.xib; sourceTree = "<group>"; };
 		A6360F3220EBD6D400914ED9 /* CommentListView_shiseidme.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentListView_shiseidme.xib; sourceTree = "<group>"; };
@@ -255,6 +271,8 @@
 				A6A5CD9E20F49EB900119966 /* SignUpViewController.xib */,
 				A64694FB216215E400889E42 /* NewsViewController.swift */,
 				A64694FC216215E400889E42 /* NewsViewController.xib */,
+				A6113C4C2163A510001C8DEC /* AdvertisementsViewController.swift */,
+				A6113C4D2163A510001C8DEC /* AdvertisementsViewController.xib */,
 			);
 			path = ScreenletsViewControllers;
 			sourceTree = "<group>";
@@ -344,6 +362,12 @@
 		D693890E20EA3490003EC7ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A6113C4621637D17001C8DEC /* social_disabled.png */,
+				A6113C4721637D17001C8DEC /* social_enabled.png */,
+				A6113C4221637C5D001C8DEC /* advertisements_disabled.png */,
+				A6113C4321637C5D001C8DEC /* advertisements_enabled.png */,
+				A6113C3E21637ABB001C8DEC /* chat-disabled.png */,
+				A6113C3F21637ABD001C8DEC /* chat-enabled.png */,
 				A63C9B1D215E5E6F00A9BB4E /* bg.jpg */,
 				A67B58762162208E00F1B525 /* news_disabled.png */,
 				A67B58772162208E00F1B525 /* news_enabled.png */,
@@ -434,21 +458,27 @@
 				A6360F3720EBE1DB00914ED9 /* CommentAddView_shiseidme.xib in Resources */,
 				A63AB820216210830021699C /* ImageGalleryView_shiseidme_news.xib in Resources */,
 				D60306DF20EA0161005262B0 /* LoadingViewController.xib in Resources */,
+				A6113C4821637D18001C8DEC /* social_disabled.png in Resources */,
 				D680440920ECCF4E00B64BE0 /* chat.png in Resources */,
 				D66C6BE120EBAD7E00544BCD /* feed_enabled.png in Resources */,
 				D66C6BC620EB71DA00544BCD /* UserPortraitView_shiseidme.xib in Resources */,
 				A6360F3320EBD6D500914ED9 /* CommentListView_shiseidme.xib in Resources */,
 				A68D6F7B20E54563005D2C79 /* liferay-server-context.plist in Resources */,
 				A64694FE216215E400889E42 /* NewsViewController.xib in Resources */,
+				A6113C4521637C5D001C8DEC /* advertisements_enabled.png in Resources */,
 				A67B58792162208E00F1B525 /* news_enabled.png in Resources */,
 				A6A5CD8E20EF589E00119966 /* profile_enabled.png in Resources */,
+				A6113C4121637ABD001C8DEC /* chat-enabled.png in Resources */,
 				D66C3BF620EA50CC00BF83A0 /* FeedCell.xib in Resources */,
 				A63C9B16215E524000A9BB4E /* Icon-App-60x60@2x.png in Resources */,
 				A6A5CD9B20F357B800119966 /* logo_xl.gif in Resources */,
 				D60306E720EA0473005262B0 /* FeedViewController.xib in Resources */,
+				A6113C4921637D18001C8DEC /* social_enabled.png in Resources */,
 				A647DDC320E541DD00B36511 /* LaunchScreen.storyboard in Resources */,
 				A6A5CD9320EF8A0300119966 /* ImageUploadDetailView_shiseidme.xib in Resources */,
 				A6A5CD9120EF68BB00119966 /* plus-button.png in Resources */,
+				A6113C4421637C5D001C8DEC /* advertisements_disabled.png in Resources */,
+				A6113C4F2163A510001C8DEC /* AdvertisementsViewController.xib in Resources */,
 				D680443E20ECDBAF00B64BE0 /* arrows.png in Resources */,
 				A6A5CD8F20EF58A900119966 /* logo.gif in Resources */,
 				A67B587B2162217300F1B525 /* NewsCell.xib in Resources */,
@@ -463,6 +493,7 @@
 				D60306EB20EA075E005262B0 /* UserProfileViewController.xib in Resources */,
 				A68D6F8920E551BE005D2C79 /* ImageGalleryView_shiseidme_feed.xib in Resources */,
 				A6360F3120EBD3FB00914ED9 /* CommentTableViewCell_shiseidme.xib in Resources */,
+				A6113C4021637ABD001C8DEC /* chat-disabled.png in Resources */,
 				A67B58782162208E00F1B525 /* news_disabled.png in Resources */,
 				A647DDC020E541DD00B36511 /* Assets.xcassets in Resources */,
 				D66C3C0020EA77A100BF83A0 /* UserView.xib in Resources */,
@@ -567,6 +598,7 @@
 				A6A5CD8B20EF575400119966 /* ChatViewController.swift in Sources */,
 				A68D6F8B20E551ED005D2C79 /* ImageGalleryView_shiseidme_feed.swift in Sources */,
 				A67B587D2162220100F1B525 /* NewsCell.swift in Sources */,
+				A6113C4E2163A510001C8DEC /* AdvertisementsViewController.swift in Sources */,
 				A6A5CD9D20F49E9600119966 /* SignUpViewController.swift in Sources */,
 				D680441220ECDA6000B64BE0 /* Colors.swift in Sources */,
 				D60306EF20EA295B005262B0 /* FeedCell.swift in Sources */,

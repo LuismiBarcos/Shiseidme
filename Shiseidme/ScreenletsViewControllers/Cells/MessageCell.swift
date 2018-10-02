@@ -86,7 +86,7 @@ class MessageCell: UITableViewCell {
 		textLabel.sizeToFit()
 
 		let constant = min(textLabel.frame.width, maxConstraint)
-		self.widthConstraint.constant = max(constant + 16, 116)
+		self.widthConstraint.constant = max(constant + 16, 30)
 	}
 
 	static func defaultFontSize() -> CGFloat {

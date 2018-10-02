@@ -37,7 +37,7 @@ class ChatViewController: SLKTextViewController {
 
 		configureTableView()
 
-		title = "Chat"
+//        title = "Chat"
 
 //        WeDeploy.data(whatsappDataUrl)
 //            .orderBy(field: "id", order: .ASC)

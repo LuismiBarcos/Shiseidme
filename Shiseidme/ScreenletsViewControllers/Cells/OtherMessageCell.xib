@@ -25,7 +25,7 @@
                         <rect key="frame" x="5" y="3" width="211" height="50"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSA-Xa-Idm">
-                                <rect key="frame" x="8" y="13" width="42" height="29"/>
+                                <rect key="frame" x="8" y="8" width="42" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -33,10 +33,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.9543728298944445" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="bSA-Xa-Idm" firstAttribute="top" secondItem="4Ep-Kt-Lp8" secondAttribute="top" constant="13" id="RV6-si-jyW"/>
+                            <constraint firstItem="bSA-Xa-Idm" firstAttribute="top" secondItem="4Ep-Kt-Lp8" secondAttribute="top" constant="8" id="RV6-si-jyW"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bSA-Xa-Idm" secondAttribute="trailing" constant="8" id="bEd-Yf-LWL"/>
                             <constraint firstAttribute="width" constant="211" id="cmh-Wh-yXN"/>
-                            <constraint firstAttribute="bottom" secondItem="bSA-Xa-Idm" secondAttribute="bottom" constant="8" id="dNP-4g-kGA"/>
+                            <constraint firstAttribute="bottom" secondItem="bSA-Xa-Idm" secondAttribute="bottom" constant="13" id="dNP-4g-kGA"/>
                             <constraint firstItem="bSA-Xa-Idm" firstAttribute="leading" secondItem="4Ep-Kt-Lp8" secondAttribute="leading" constant="8" id="es7-GN-cL5"/>
                         </constraints>
                     </view>
